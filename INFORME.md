@@ -129,7 +129,17 @@ Con 6 respuestas, los resultados son tendencias y no porcentajes de la població
 
 ## 5. Fase C – Arquitectura de información (Producto C)
 
-> **PENDIENTE.** Aquí va el mapa de contenidos con el orden de las secciones justificado a partir de la Fase B, los wireframes de baja fidelidad en móvil y escritorio, y la relación entre cada sección y sus fuentes (por ID de la matriz).
+| N.° | Sección | Pregunta del público que responde | Por qué va en este lugar |
+| --- | --- | --- | --- |
+| 1 | Portada | ¿De qué se trata esta carrera y qué encuentro en esta página? | Las personas conocen la carrera "a medias" (3,0 de 5 en promedio, rango de 2 a 5). La portada la presenta en pocas líneas y lleva a lo más buscado. |
+| 2 | Campo laboral | ¿Hay trabajo al titularse? ¿Cuánto se gana? | "Si hay trabajo al titularse" fue la duda más marcada (4 de 6) y "cuánto se gana" la marcaron 3 de 6. |
+| 3 | Plan de estudios | ¿Cuánta matemática hay? ¿Qué se estudia? | "Cuánta matemática hay" la marcaron 4 de 6, igual que la primera, y "qué se estudia (malla)" 2 de 6. |
+| 4 | Sobre la carrera | ¿Cuántos años dura? ¿Cómo es la vida de estudiante? | "Cuántos años dura" la marcaron 3 de 6 y "cómo es la vida de estudiante" 2 de 6. |
+| 5 | Admisión | ¿Qué puntajes y requisitos piden? | 3 de 6 marcaron "puntajes y requisitos de ingreso". Empata con Sobre la carrera, que va antes porque suma otra duda (2 de 6). |
+| 6 | Perfil de egreso | ¿Qué se hace en el día a día de la profesión? | 2 de 6 marcaron "qué se hace en el día a día". También responde a la frase "solo se programa", con la que solo 1 de 6 estuvo de acuerdo (4 o 5). |
+| 7 | Preguntas frecuentes | Dudas y creencias que no caben en otra sección | Reúne la IA (2 de 6 de acuerdo, con 4 o 5), "más para hombres" (2 de 6), la matemática (acuerdo promedio de 3,0 de 5) y las preguntas abiertas de la encuesta. |
+| 8 | Respaldo institucional | ¿Qué respaldo tiene la carrera? | Nadie marcó "si la carrera está acreditada" (0 de 6), por eso va casi al final. Se incluye porque es obligatoria y 2 de 6 desconfían de frases como "la mejor carrera" sin respaldo. |
+| 9 | Referencias | ¿De dónde salen las cifras? | "Información desactualizada" generó desconfianza en 3 de 6 y "cifras sin decir de dónde salen" en 2 de 6. Cada cifra del sitio enlaza aquí. |
 
 Secciones obligatorias del sitio: Portada, Sobre la carrera, Perfil de egreso, Plan de estudios, Campo laboral, Respaldo institucional, Admisión, Preguntas frecuentes y Referencias.
 
@@ -186,6 +196,9 @@ Se usó Claude (Anthropic) como apoyo. Ningún dato se tomó de la IA sin verifi
 | Claude      | Ordenar las respuestas en una planilla                | Ordenar el Excel para que sea fácil de leer                     | Se completó con las opciones del formulario que nadie marcó y se corrigió la muestra (no había opción de 3.° medio) al compararlo con el formulario real.                          |
 | Claude      | Redactar el Producto B y el Anexo B1                  | Perfil de usuario, tabla de preguntas y cuestionario como anexo | Se ajustó la descripción de la muestra y del instrumento al formulario real y se revisaron las cifras contra las respuestas.                                                       |
 | Claude | Buscar y evaluar fuentes y armar la matriz (Producto A) | Completar la matriz según lo que pide el profe y verificar los datos en la CNA, Mi Futuro y el SIES | La lista de fuentes inicial se corrigió (enlaces genéricos reemplazados por páginas específicas y una noticia reemplazada por el informe SIES). Cada dato se verificó abriendo la fuente. Una cifra de prensa que no estaba en el informe del SIES se descartó, y el "4 años" de acreditación de Mi Futuro se reemplazó por el dato vigente de la CNA. |
+
+
+Claude	Proponer el orden de las secciones y redactar la tabla de la Fase C | Ordenar las 9 secciones según las preguntas priorizadas de la encuesta | Se completo un cambio en el orden o de los textos; las cifras se verificaron contra la planilla| 
 
 El código generado con ayuda de IA está documentado línea a línea en los comentarios del propio código.
 
