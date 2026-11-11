@@ -27,14 +27,31 @@ He tenido una grata experiencia con los profesores y profesoras.
 ## Perfil de egreso
 
 Texto:
-[ESCRIBE AQUÍ 3 o 4 oraciones con tus palabras, tomadas del perfil de egreso oficial de la carrera (dato) [F01] [F03]. Responde "¿qué se hace en el día a día?". No agregues competencias ni certificaciones que no estén en esas páginas.]
+El(La) Ingeniero(a) en Informática de la Universidad Tecnológica Metropolitana es un(a) profesional con sólida formación en ingeniería aplicada e informática, capacitado(a) para diseñar, desarrollar e integrar soluciones de software y sistemas de información, gestionar redes y recursos computacionales, y administrar tecnologías de la información, considerando criterios de seguridad, confiabilidad, calidad y eficiencia. Puede desempeñarse en organizaciones públicas, privadas y del tercer sector, contribuyendo al desarrollo tecnológico y organizacional mediante el uso de metodologías, herramientas y tecnologías vigentes. Complementa su formación disciplinar con competencias genéricas orientadas al aprendizaje continuo, la comunicación efectiva, el trabajo colaborativo, el emprendimiento, la innovación y el ejercicio profesional con responsabilidad social.
 
 ## Plan de estudios
 
 Texto:
 La Resolución Exenta N.° 03838, de 2022, aprueba el plan de estudios de Ingeniería en Informática, código 21030 (dato) [F02].
 El Departamento de Informática y Computación publica información académica complementaria (dato) [F03].
-[AGREGA AQUÍ la lista de asignaturas por semestre, copiada de la malla oficial (dato) [F02] [F03]. No inventes asignaturas. No publiques créditos SCT.]
+## Plan de estudios
+Texto:
+Año 1
+- Semestre I: Design Thinking, Introducción a la Matemática para Ingeniería, Introducción a la Ingeniería en Informática (actividad práctica de motivación), Algoritmos y Programación, Habilidades de Razonamiento Lógico.
+- Semestre II: Física General, Cálculo I, Álgebra I, Estructura de Datos, Habilidades de Trabajo Académico.
+
+Año 2
+- Semestre III: Electromagnetismo, Cálculo II, Álgebra II, Lenguaje de Programación, Bases de Datos.
+- Semestre IV: Electrotecnia, Fundamentos de Administración, Estadística y Probabilidades, Grafos y Lenguajes Formales, Desarrollo Ágil.
+
+Año 3
+- Semestre V: Ingeniería y Medio Ambiente, Fundamentos de Economía, Arquitectura de Computadores, Ingeniería de Software (práctica intermedia A+S), Introducción a la Computación en la Nube.
+- Semestre VI: Evaluación de Proyectos de Software, Fundamentos de Data Science, Redes y Comunicación de Datos, Computación Web y Móvil, Electivo de Profundización Profesional I (articulación pregrado-postgrado).
+
+Año 4
+- Semestre VII: Computación en la Nube, Gestión de Proyectos Informáticos, Cyberseguridad, Electivo de Profundización Profesional II (articulación pregrado-postgrado), Electivo de Profundización Profesional III (articulación pregrado-postgrado).
+-Semestre VIII:  Actividad Integradora de Certificación de Grado y Título Profesional, Práctica Profesional, Taller de Empleabilidad
+
 
 ## Campo laboral
 
