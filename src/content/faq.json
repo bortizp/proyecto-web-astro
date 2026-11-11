@@ -1,8 +1,116 @@
 [
   {
-    "id": "prueba-1",
-    "pregunta": "Pregunta de prueba",
-    "respuesta": "Respuesta de prueba",
-    "fuenteId": "F01"
+    "id": "hay-trabajo",
+    "pregunta": "¿Hay trabajo al titularse?",
+    "respuesta": [
+      {
+        "texto": "En la edición 2025-2026 de Mi Futuro, la empleabilidad es 87,1 % al primer año de titulación y 96,5 % al segundo año.",
+        "tipo": "dato",
+        "fuentes": [
+          "F13"
+        ]
+      },
+      {
+        "texto": "Son promedios y no aseguran el resultado de cada persona.",
+        "tipo": "interpretacion"
+      }
+    ]
+  },
+  {
+    "id": "cuanta-matematica",
+    "pregunta": "¿Cuánta matemática hay?",
+    "respuesta": [
+      {
+        "texto": "El plan de estudios incluye asignaturas de cálculo, álgebra y estadística en los primeros cuatro semestres.",
+        "tipo": "dato",
+        "fuentes": [
+          "F01",
+          "F02"
+        ]
+      },
+      {
+        "texto": "Para ingresar, la UTEM pondera Matemática 1 con 30 %, el valor más alto de la lista.",
+        "tipo": "dato",
+        "fuentes": [
+          "F01"
+        ]
+      },
+      {
+        "texto": "No tenemos un dato verificado sobre qué tan difícil resulta."
+      }
+    ]
+  },
+  {
+    "id": "cuantos-anios",
+    "pregunta": "¿Cuántos años dura la carrera?",
+    "respuesta": [
+      {
+        "texto": "La carrera dura 8 semestres, que son 4 años.",
+        "tipo": "dato",
+        "fuentes": [
+          "F01"
+        ]
+      },
+      {
+        "texto": "La Resolución Exenta N.° 03838 de 2022 también indica 8 semestres.",
+        "tipo": "dato",
+        "fuentes": [
+          "F02"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cuanto-se-gana",
+    "pregunta": "¿Cuánto se gana?",
+    "respuesta": [
+      {
+        "texto": "Según Mi Futuro 2025-2026, el ingreso promedio al cuarto año de titulación va de $2.200.000 a $2.300.000.",
+        "tipo": "dato",
+        "fuentes": [
+          "F13"
+        ]
+      },
+      {
+        "texto": "No es un sueldo garantizado.",
+        "tipo": "interpretacion"
+      }
+    ]
+  },
+  {
+    "id": "puntajes-requisitos",
+    "pregunta": "¿Qué puntajes y requisitos piden?",
+    "respuesta": [
+      {
+        "texto": "Según la página de la UTEM consultada el 8 de noviembre de 2026, no se pide puntaje ponderado mínimo. Sí se pide un promedio mínimo de 458 puntos entre Competencia Lectora y Matemática 1.",
+        "tipo": "dato",
+        "fuentes": [
+          "F01"
+        ]
+      },
+      {
+        "texto": "Se informan 150 vacantes.",
+        "tipo": "dato",
+        "fuentes": [
+          "F01"
+        ]
+      },
+      {
+        "texto": "Las instrucciones generales de postulación están en el DEMRE.",
+        "tipo": "dato",
+        "fuentes": [
+          "F08"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "inteligencia-artificial",
+    "pregunta": "¿La inteligencia artificial deja sin trabajo a los informáticos?",
+    "respuesta": [
+      {
+        "texto": "No tenemos un dato verificado sobre esto."
+      }
+    ]
   }
 ]

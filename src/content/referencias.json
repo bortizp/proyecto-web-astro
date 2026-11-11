@@ -1,11 +1,164 @@
 [
   {
     "id": "F01",
-    "referencia": "Universidad Tecnológica Metropolitana. (s. f.). Ingeniería en Informática. https://www.utem.cl",
+    "referencia": "Universidad Tecnológica Metropolitana. (s. f.). Ingeniería en Informática. https://www.utem.cl/carreras/ingenieria-en-informatica/",
     "tipo": "primaria",
-    "fechaDato": "2026",
+    "fechaDato": "s. f. (sin fecha visible)",
     "fechaConsulta": "2026-11-08",
-    "url": "https://www.utem.cl",
-    "seccion": "Sobre la carrera"
+    "url": "https://www.utem.cl/carreras/ingenieria-en-informatica/",
+    "seccion": "Portada / Sobre la carrera; Perfil de egreso; Admisión (arancel/vacantes)"
+  },
+  {
+    "id": "F02",
+    "referencia": "Universidad Tecnológica Metropolitana. (2022). Resolución Exenta N.° 03838: Aprueba plan de estudios de la carrera Ingeniería en Informática (código 21030) [Resolución]. https://transparencia.utem.cl/lbt5",
+    "tipo": "primaria",
+    "fechaDato": "4 oct 2022",
+    "fechaConsulta": "2026-11-08",
+    "url": "https://transparencia.utem.cl/lbt5",
+    "seccion": "Plan de estudios"
+  },
+  {
+    "id": "F03",
+    "referencia": "Universidad Tecnológica Metropolitana, Departamento de Informática y Computación. (s. f.). Información académica. https://informatica.utem.cl/informacion-academica/",
+    "tipo": "primaria",
+    "fechaDato": "s. f. (sin fecha visible)",
+    "fechaConsulta": "2026-11-08",
+    "url": "https://informatica.utem.cl/informacion-academica/",
+    "seccion": "Plan de estudios (apoyo); Perfil de egreso"
+  },
+  {
+    "id": "F04",
+    "referencia": "Universidad Tecnológica Metropolitana, Dirección de Gestión de Calidad. (s. f.). Certificación de carreras. https://calidad.utem.cl/certificacion-de-carreras/",
+    "tipo": "primaria",
+    "fechaDato": "Vigencia declarada: 16 jun 2025 a 16 jun 2030",
+    "fechaConsulta": "2026-11-08",
+    "url": "https://calidad.utem.cl/certificacion-de-carreras/",
+    "seccion": "Respaldo institucional"
+  },
+  {
+    "id": "F05",
+    "referencia": "Comisión Nacional de Acreditación. (s. f.). Búsqueda avanzada de acreditaciones: pregrado, Universidad Tecnológica Metropolitana [Base de datos]. Recuperado el 8 de noviembre de 2026, de https://www.cnachile.cl/Paginas/buscador-avanzado.aspx",
+    "tipo": "primaria",
+    "fechaDato": "Historial de decisiones de Ing. en Informática: 2007, 2010 y 2014 (no aparece acreditación vigente)",
+    "fechaConsulta": "2026-11-08",
+    "url": "https://www.cnachile.cl/Paginas/buscador-avanzado.aspx",
+    "seccion": "Respaldo institucional"
+  },
+  {
+    "id": "F06",
+    "referencia": "Universidad Tecnológica Metropolitana. (s. f.). Admisión: acceso vía PAES. https://www.utem.cl/admision/admision-acceso-via-paes/",
+    "tipo": "primaria",
+    "fechaDato": "s. f. (sin fecha visible)",
+    "fechaConsulta": "2026-11-08",
+    "url": "https://www.utem.cl/admision/admision-acceso-via-paes/",
+    "seccion": "Admisión"
+  },
+  {
+    "id": "F07",
+    "referencia": "Departamento de Evaluación, Medición y Registro Educacional. (s. f.). Calendario proceso de admisión 2027. https://demre.cl/calendario/calendario-proceso-2027",
+    "tipo": "primaria",
+    "fechaDato": "Proceso de admisión 2027",
+    "fechaConsulta": "2026-11-08",
+    "url": "https://demre.cl/calendario/calendario-proceso-2027",
+    "seccion": "Admisión"
+  },
+  {
+    "id": "F08",
+    "referencia": "Departamento de Evaluación, Medición y Registro Educacional. (s. f.). Instrucciones generales de postulación. https://demre.cl/paes/postulacion/como-postulo-a-una-universidad/instrucciones-generales-postulacion",
+    "tipo": "primaria",
+    "fechaDato": "s. f. (sin fecha visible)",
+    "fechaConsulta": "2026-11-08",
+    "url": "https://demre.cl/paes/postulacion/como-postulo-a-una-universidad/instrucciones-generales-postulacion",
+    "seccion": "Admisión; FAQ"
+  },
+  {
+    "id": "F09",
+    "referencia": "Universidad Tecnológica Metropolitana. (s. f.). Oferta académica de pregrado: carreras. https://www.utem.cl/oferta-academica/pregrado/carreras/",
+    "tipo": "primaria",
+    "fechaDato": "s. f. (sin fecha visible)",
+    "fechaConsulta": "2026-11-08",
+    "url": "https://www.utem.cl/oferta-academica/pregrado/carreras/",
+    "seccion": "Sobre la carrera (comparación)"
+  },
+  {
+    "id": "F10",
+    "referencia": "Universidad de Santiago de Chile. (s. f.). Ingeniería Civil en Informática. https://informatica.usach.cl/pregrado/ingenieria-civil-en-informatica/",
+    "tipo": "primaria",
+    "fechaDato": "Página modificada 14 ago 2026",
+    "fechaConsulta": "2026-11-08",
+    "url": "https://informatica.usach.cl/pregrado/ingenieria-civil-en-informatica/",
+    "seccion": "Sobre la carrera (comparación con afín 1)"
+  },
+  {
+    "id": "F11",
+    "referencia": "Universidad Tecnológica Metropolitana. (s. f.). Ingeniería Civil en Computación, mención Informática (prosecución de estudios). https://www.utem.cl/carreras/ingenieria-civil-en-computacion-mencion-informatica-prosecucion-de-estudios/",
+    "tipo": "primaria",
+    "fechaDato": "s. f. (sin fecha visible)",
+    "fechaConsulta": "2026-11-08",
+    "url": "https://www.utem.cl/carreras/ingenieria-civil-en-computacion-mencion-informatica-prosecucion-de-estudios/",
+    "seccion": "Sobre la carrera (comparación con afín 2)"
+  },
+  {
+    "id": "F12",
+    "referencia": "Servicio de Información de Educación Superior. (2026, julio). Matrícula en educación superior en Chile: Informe 2026. Subsecretaría de Educación Superior. https://www.mifuturo.cl/wp-content/uploads/2026/07/Informe-de-Matr%C3%ADcula-2026.pdf",
+    "tipo": "primaria",
+    "fechaDato": "Julio 2026 (matrícula al 30 abr 2026 en pregrado)",
+    "fechaConsulta": "2026-11-08",
+    "url": "https://www.mifuturo.cl/wp-content/uploads/2026/07/Informe-de-Matr%C3%ADcula-2026.pdf",
+    "seccion": "Campo laboral / contexto de demanda"
+  },
+  {
+    "id": "F13",
+    "referencia": "Servicio de Información de Educación Superior. (2025-2026). Buscador de empleabilidad e ingresos: Universidad Tecnológica Metropolitana, Ingeniería en Informática [Base de datos]. Ministerio de Educación. Recuperado el 8 de noviembre de 2026, de https://www.mifuturo.cl/buscador-de-empleabilidad-e-ingresos/",
+    "tipo": "primaria",
+    "fechaDato": "Edición 2025-2026 (cohortes de titulación 2018 a 2023, según la metodología)",
+    "fechaConsulta": "2026-11-08",
+    "url": "https://www.mifuturo.cl/buscador-de-empleabilidad-e-ingresos/",
+    "seccion": "Campo laboral"
+  },
+  {
+    "id": "F14",
+    "referencia": "Facultad de Ingeniería, Universidad Tecnológica Metropolitana. (2025, 9 de julio). Ingeniería en Informática UTEM obtiene certificación nacional e internacional por cinco años. https://fing.utem.cl/2025/07/09/ingenieria-en-informatica-utem-obtiene-certificacion-nacional-e-internacional-por-cinco-anos/",
+    "tipo": "primaria",
+    "fechaDato": "9 jul 2025 (periodo 16 jun 2025 - 16 jun 2030)",
+    "fechaConsulta": "2026-11-08",
+    "url": "https://fing.utem.cl/2025/07/09/ingenieria-en-informatica-utem-obtiene-certificacion-nacional-e-internacional-por-cinco-anos/",
+    "seccion": "Respaldo institucional"
+  },
+  {
+    "id": "F15",
+    "referencia": "Gálvez, R. (2026, 30 de julio). Matrícula de educación superior sigue creciendo: con 1.497.548 registros, suma 5 años consecutivos de máximo histórico. La Tercera. https://www.latercera.com/nacional/noticia/matricula-de-educacion-superior-sigue-creciendo-con-1497548-registros-suma-5-anos-consecutivos-de-maximo-historico/",
+    "tipo": "secundaria",
+    "fechaDato": "30 jul 2026 (Informe SIES 2026)",
+    "fechaConsulta": "2026-11-08",
+    "url": "https://www.latercera.com/nacional/noticia/matricula-de-educacion-superior-sigue-creciendo-con-1497548-registros-suma-5-anos-consecutivos-de-maximo-historico/",
+    "seccion": "Campo laboral / contexto de demanda (solo complemento)"
+  },
+  {
+    "id": "F16",
+    "referencia": "Elige Tu Futuro. (s. f.). Ingeniería en Informática en Macul - Universidad Tecnológica Metropolitana [Datos SIES/Mineduc]. https://eligetufuturo.cl/carrera/ingenieria-en-informatica-universidad-tecnologica-metropolitana-sede-macul-diurna",
+    "tipo": "secundaria",
+    "fechaDato": "Oferta 2026 (SIES); empleabilidad e ingreso: Mi Futuro 2025-2026 según el sitio",
+    "fechaConsulta": "2026-11-08",
+    "url": "https://eligetufuturo.cl/carrera/ingenieria-en-informatica-universidad-tecnologica-metropolitana-sede-macul-diurna",
+    "seccion": "Campo laboral (provisorio hasta confirmar en F13)"
+  },
+  {
+    "id": "F17",
+    "referencia": "Comisión Nacional de Acreditación. (s. f.). Búsqueda avanzada de acreditaciones: institucional, Universidad Tecnológica Metropolitana [Base de datos]. Recuperado el 8 de noviembre de 2026, de https://www.cnachile.cl/Paginas/buscador-avanzado.aspx",
+    "tipo": "primaria",
+    "fechaDato": "Decisión vigente: acreditada, nivel avanzado, 5 años, del 26 mar 2026 al 26 mar 2031",
+    "fechaConsulta": "2026-11-08",
+    "url": "https://www.cnachile.cl/Paginas/buscador-avanzado.aspx",
+    "seccion": "Respaldo institucional"
+  },
+  {
+    "id": "F18",
+    "referencia": "Universidad Tecnológica Metropolitana, Departamento de Informática y Computación. (s. f.). Académicos y académicas de jornada completa. https://informatica.utem.cl/academicos-y-docentes/",
+    "tipo": "primaria",
+    "fechaDato": "s. f. (sin fecha de actualización visible)",
+    "fechaConsulta": "2026-11-08",
+    "url": "https://informatica.utem.cl/academicos-y-docentes/",
+    "seccion": "Respaldo institucional (cuerpo académico)"
   }
 ]

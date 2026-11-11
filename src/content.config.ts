@@ -37,8 +37,20 @@ const faq = defineCollection({
   loader: file("src/content/faq.json"),
   schema: z.object({
     pregunta: z.string(),
-    respuesta: z.string(),
-    fuenteId: z.string().regex(/^F\d{2}$/),
+    respuesta: z
+      .array(
+        z
+          .object({
+            texto: z.string(),
+            tipo: z.enum(["dato", "interpretacion", "testimonio"]).optional(),
+            fuentes: z.array(z.string().regex(/^F\d{2}$/)).default([]),
+          })
+          .refine((p) => p.tipo !== "dato" || p.fuentes.length > 0, {
+            message:
+              "Todo dato necesita al menos una fuente (por ejemplo F13).",
+          }),
+      )
+      .min(1),
   }),
 });
 

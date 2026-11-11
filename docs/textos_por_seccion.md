@@ -15,6 +15,7 @@ Cada cifra indica su fuente y su año. Si no hay un dato verificado, lo decimos.
 
 
 La UTEM imparte Ingeniería en Informática con el código de carrera 21030 (dato) [F02].
+La carrera dura 8 semestres, que son 4 años (dato) [F01].
 Existen carreras afines que no son iguales a esta (interpretación del equipo).
 La Universidad de Santiago de Chile (USACH) ofrece Ingeniería Civil en Informática (dato) [F10].
 La propia UTEM ofrece Ingeniería Civil en Computación, mención Informática, como ruta de prosecución de estudios (dato) [F11].
@@ -34,26 +35,31 @@ La formación suma aprendizaje continuo, comunicación, trabajo en equipo, empre
 
 ## Plan de estudios
 
+La carrera dura 8 semestres, organizados en 4 años (dato) [F01].
 La Resolución Exenta N.° 03838, de 2022, aprueba el plan de estudios de Ingeniería en Informática, código 21030 (dato) [F02].
+Esa resolución indica 8 semestres y 240 créditos transferibles en total, con 30 créditos por semestre (dato) [F02].
 El Departamento de Informática y Computación publica información académica complementaria (dato) [F03].
-## Plan de estudios
+
+Malla curricular aprobada en esa resolución, con los créditos de cada asignatura entre paréntesis (dato) [F02]:
 
 Año 1
-- Semestre I: Design Thinking, Introducción a la Matemática para Ingeniería, Introducción a la Ingeniería en Informática (actividad práctica de motivación), Algoritmos y Programación, Habilidades de Razonamiento Lógico.
-- Semestre II: Física General, Cálculo I, Álgebra I, Estructura de Datos, Habilidades de Trabajo Académico.
+- Semestre I (30 créditos): Habilidades de Razonamiento Lógico (4), Taller de Matemáticas (6), Taller de Ciencia y Tecnología (4), Introducción a la Ingeniería Informática (6), Design Thinking (4), Algoritmos y Programación (6).
+- Semestre II (30 créditos): Habilidades de Trabajo Académico (4), Cálculo Diferencial (6), Álgebra Clásica (6), Mecánica Clásica (6), Estructura de Datos (6), Electivo Formación General (2).
 
 Año 2
-- Semestre III: Electromagnetismo, Cálculo II, Álgebra II, Lenguaje de Programación, Bases de Datos.
-- Semestre IV: Electrotecnia, Fundamentos de Administración, Estadística y Probabilidades, Grafos y Lenguajes Formales, Desarrollo Ágil.
+- Semestre III (30 créditos): Cálculo Integral (6), Álgebra Superior (6), Electromagnetismo (6), Base de Datos (6), Lenguaje de Programación (6).
+- Semestre IV (30 créditos): Estadística y Probabilidades (4), Ingeniería Ambiental (4), Taller de Principios de Sustentabilidad (4), Grafos y Lenguajes Formales (6), Sistema de Información (6), Arquitectura de Computadores (6).
 
 Año 3
-- Semestre V: Ingeniería y Medio Ambiente, Fundamentos de Economía, Arquitectura de Computadores, Ingeniería de Software (práctica intermedia A+S), Introducción a la Computación en la Nube.
-- Semestre VI: Evaluación de Proyectos de Software, Fundamentos de Data Science, Redes y Comunicación de Datos, Computación Web y Móvil, Electivo de Profundización Profesional I (articulación pregrado-postgrado).
+- Semestre V (30 créditos): Circuitos Eléctricos (4), Principios de Economía (4), Inglés I (4), Desarrollo Ágil (6), Sistemas Operativos (6), Análisis de Algoritmos (6).
+- Semestre VI (30 créditos): Inglés II (4), Fundamentos de Data Science (6), Ciberseguridad (4), Evaluación de Proyectos Informáticos (4), Ingeniería de Software (6), Redes y Comunicación de Datos (6).
 
 Año 4
--Semestre VII: Computación en la Nube, Gestión de Proyectos Informáticos, Cyberseguridad, Electivo de Profundización Profesional II (articulación pregrado-postgrado), Electivo de Profundización Profesional III (articulación pregrado-postgrado).
--Semestre VIII:  Actividad Integradora de Certificación de Grado y Título Profesional, Práctica Profesional, Taller de Empleabilidad
+- Semestre VII (30 créditos): Gestión de Proyectos Informáticos (6), Computación en la Nube (6), Computación Móvil y Web (6), Electivo de Formación Especializada I (4), Electivo de Formación Especializada II (4), Trabajo de Título I (4).
+- Semestre VIII (30 créditos): Taller de Innovación y Emprendimiento (4), Trabajo de Título II (4), Práctica Profesional (22).
 
+La página oficial de la carrera publica una malla con otras asignaturas en varios semestres (dato) [F01].
+Antes de decidir, confirma en la secretaría de la carrera qué plan de estudios te corresponde según tu año de ingreso (interpretación del equipo).
 
 ## Campo laboral
 
@@ -75,12 +81,12 @@ La otorgaron la Agencia Acreditadora de Chile y CONAIC, un organismo con sede en
 La UTEM, como institución, está acreditada por la Comisión Nacional de Acreditación (CNA) en nivel avanzado (dato) [F17].
 La acreditación dura cinco años: del 26 de marzo de 2026 al 26 de marzo de 2031 (dato) [F17].
 Son dos reconocimientos distintos: la CNA acredita a la institución y otras agencias certifican la carrera (interpretación del equipo).
-El Departamento de Informática y Computación registra 10 académicos y académicas de jornada completa (dato) [F18].
+La lista del Departamento de Informática y Computación incluye 10 académicos y académicas de jornada completa (dato) [F18].
 
 ## Admisión
 
 
-La carrera ingresa por la Prueba de Acceso a la Educación Superior (PAES) (dato) [F06].
+La UTEM admite a sus estudiantes de pregrado por la Prueba de Acceso a la Educación Superior (PAES) (dato) [F06].
 Según la UTEM, la página consultada el 8 de noviembre de 2026 informa 150 vacantes (dato) [F01].
 La matrícula cuesta $90.000 y el arancel anual es $4.763.300 (dato) [F01].
 El promedio mínimo entre Competencia Lectora y Matemática 1 es 458 puntos (dato) [F01].
@@ -94,10 +100,10 @@ P1: ¿Hay trabajo al titularse?
 R1: En la edición 2025-2026 de Mi Futuro, la empleabilidad es 87,1 % al primer año de titulación y 96,5 % al segundo año (dato) [F13]. Son promedios y no aseguran el resultado de cada persona (interpretación del equipo).
 
 P2: ¿Cuánta matemática hay?
-R2: No tenemos un dato verificado sobre esto. Para ingresar, la UTEM pondera Matemática 1 con 30 %, el valor más alto de la lista (dato) [F01].
+R2: El plan de estudios incluye asignaturas de cálculo, álgebra y estadística en los primeros cuatro semestres (dato) [F01] [F02]. Para ingresar, la UTEM pondera Matemática 1 con 30 %, el valor más alto de la lista (dato) [F01]. No tenemos un dato verificado sobre qué tan difícil resulta.
 
 P3: ¿Cuántos años dura la carrera?
-R3: No tenemos un dato verificado sobre esto.
+R3: La carrera dura 8 semestres, que son 4 años (dato) [F01]. La Resolución Exenta N.° 03838 de 2022 también indica 8 semestres (dato) [F02].
 
 P4: ¿Cuánto se gana?
 R4: Según Mi Futuro 2025-2026, el ingreso promedio al cuarto año de titulación va de $2.200.000 a $2.300.000 (dato) [F13]. No es un sueldo garantizado (interpretación del equipo).

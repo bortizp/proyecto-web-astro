@@ -1,9 +1,37 @@
 [
   {
-    "id": "prueba-1",
-    "dato": "Dato de prueba",
-    "valor": "0",
+    "id": "empleabilidad-1er-anio",
+    "dato": "Empleabilidad al primer año de titulación (Mi Futuro, edición 2025-2026)",
+    "valor": "87,1 %",
     "anio": 2026,
     "fuenteId": "F13"
+  },
+  {
+    "id": "empleabilidad-2do-anio",
+    "dato": "Empleabilidad al segundo año de titulación (Mi Futuro, edición 2025-2026)",
+    "valor": "96,5 %",
+    "anio": 2026,
+    "fuenteId": "F13"
+  },
+  {
+    "id": "ingreso-4to-anio",
+    "dato": "Ingreso promedio al cuarto año de titulación (Mi Futuro, edición 2025-2026)",
+    "valor": "$2.200.000 a $2.300.000",
+    "anio": 2026,
+    "fuenteId": "F13"
+  },
+  {
+    "id": "matricula-tecnologia-pregrado",
+    "dato": "Matrículas de pregrado en el área Tecnología (SIES)",
+    "valor": "396.770",
+    "anio": 2026,
+    "fuenteId": "F12"
+  },
+  {
+    "id": "matricula-tecnologia-porcentaje",
+    "dato": "Participación del área Tecnología en la matrícula total de pregrado (SIES)",
+    "valor": "28,9 %",
+    "anio": 2026,
+    "fuenteId": "F12"
   }
 ]

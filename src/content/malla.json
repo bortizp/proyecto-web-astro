@@ -1,1 +1,266 @@
-[{ "id": "prueba-1", "semestre": 1, "asignatura": "Asignatura de prueba" }]
+[
+  {
+    "id": "s1-habilidades-de-razonamiento-logico",
+    "semestre": 1,
+    "asignatura": "Habilidades de Razonamiento Lógico",
+    "creditos": 4
+  },
+  {
+    "id": "s1-taller-de-matematicas",
+    "semestre": 1,
+    "asignatura": "Taller de Matemáticas",
+    "creditos": 6
+  },
+  {
+    "id": "s1-taller-de-ciencia-y-tecnologia",
+    "semestre": 1,
+    "asignatura": "Taller de Ciencia y Tecnología",
+    "creditos": 4
+  },
+  {
+    "id": "s1-introduccion-a-la-ingenieria-informatica",
+    "semestre": 1,
+    "asignatura": "Introducción a la Ingeniería Informática",
+    "creditos": 6
+  },
+  {
+    "id": "s1-design-thinking",
+    "semestre": 1,
+    "asignatura": "Design Thinking",
+    "creditos": 4
+  },
+  {
+    "id": "s1-algoritmos-y-programacion",
+    "semestre": 1,
+    "asignatura": "Algoritmos y Programación",
+    "creditos": 6
+  },
+  {
+    "id": "s2-habilidades-de-trabajo-academico",
+    "semestre": 2,
+    "asignatura": "Habilidades de Trabajo Académico",
+    "creditos": 4
+  },
+  {
+    "id": "s2-calculo-diferencial",
+    "semestre": 2,
+    "asignatura": "Cálculo Diferencial",
+    "creditos": 6
+  },
+  {
+    "id": "s2-algebra-clasica",
+    "semestre": 2,
+    "asignatura": "Álgebra Clásica",
+    "creditos": 6
+  },
+  {
+    "id": "s2-mecanica-clasica",
+    "semestre": 2,
+    "asignatura": "Mecánica Clásica",
+    "creditos": 6
+  },
+  {
+    "id": "s2-estructura-de-datos",
+    "semestre": 2,
+    "asignatura": "Estructura de Datos",
+    "creditos": 6
+  },
+  {
+    "id": "s2-electivo-formacion-general",
+    "semestre": 2,
+    "asignatura": "Electivo Formación General",
+    "creditos": 2
+  },
+  {
+    "id": "s3-calculo-integral",
+    "semestre": 3,
+    "asignatura": "Cálculo Integral",
+    "creditos": 6
+  },
+  {
+    "id": "s3-algebra-superior",
+    "semestre": 3,
+    "asignatura": "Álgebra Superior",
+    "creditos": 6
+  },
+  {
+    "id": "s3-electromagnetismo",
+    "semestre": 3,
+    "asignatura": "Electromagnetismo",
+    "creditos": 6
+  },
+  {
+    "id": "s3-base-de-datos",
+    "semestre": 3,
+    "asignatura": "Base de Datos",
+    "creditos": 6
+  },
+  {
+    "id": "s3-lenguaje-de-programacion",
+    "semestre": 3,
+    "asignatura": "Lenguaje de Programación",
+    "creditos": 6
+  },
+  {
+    "id": "s4-estadistica-y-probabilidades",
+    "semestre": 4,
+    "asignatura": "Estadística y Probabilidades",
+    "creditos": 4
+  },
+  {
+    "id": "s4-ingenieria-ambiental",
+    "semestre": 4,
+    "asignatura": "Ingeniería Ambiental",
+    "creditos": 4
+  },
+  {
+    "id": "s4-taller-de-principios-de-sustentabilidad",
+    "semestre": 4,
+    "asignatura": "Taller de Principios de Sustentabilidad",
+    "creditos": 4
+  },
+  {
+    "id": "s4-grafos-y-lenguajes-formales",
+    "semestre": 4,
+    "asignatura": "Grafos y Lenguajes Formales",
+    "creditos": 6
+  },
+  {
+    "id": "s4-sistema-de-informacion",
+    "semestre": 4,
+    "asignatura": "Sistema de Información",
+    "creditos": 6
+  },
+  {
+    "id": "s4-arquitectura-de-computadores",
+    "semestre": 4,
+    "asignatura": "Arquitectura de Computadores",
+    "creditos": 6
+  },
+  {
+    "id": "s5-circuitos-electricos",
+    "semestre": 5,
+    "asignatura": "Circuitos Eléctricos",
+    "creditos": 4
+  },
+  {
+    "id": "s5-principios-de-economia",
+    "semestre": 5,
+    "asignatura": "Principios de Economía",
+    "creditos": 4
+  },
+  {
+    "id": "s5-ingles-i",
+    "semestre": 5,
+    "asignatura": "Inglés I",
+    "creditos": 4
+  },
+  {
+    "id": "s5-desarrollo-agil",
+    "semestre": 5,
+    "asignatura": "Desarrollo Ágil",
+    "creditos": 6
+  },
+  {
+    "id": "s5-sistemas-operativos",
+    "semestre": 5,
+    "asignatura": "Sistemas Operativos",
+    "creditos": 6
+  },
+  {
+    "id": "s5-analisis-de-algoritmos",
+    "semestre": 5,
+    "asignatura": "Análisis de Algoritmos",
+    "creditos": 6
+  },
+  {
+    "id": "s6-ingles-ii",
+    "semestre": 6,
+    "asignatura": "Inglés II",
+    "creditos": 4
+  },
+  {
+    "id": "s6-fundamentos-de-data-science",
+    "semestre": 6,
+    "asignatura": "Fundamentos de Data Science",
+    "creditos": 6
+  },
+  {
+    "id": "s6-ciberseguridad",
+    "semestre": 6,
+    "asignatura": "Ciberseguridad",
+    "creditos": 4
+  },
+  {
+    "id": "s6-evaluacion-de-proyectos-informaticos",
+    "semestre": 6,
+    "asignatura": "Evaluación de Proyectos Informáticos",
+    "creditos": 4
+  },
+  {
+    "id": "s6-ingenieria-de-software",
+    "semestre": 6,
+    "asignatura": "Ingeniería de Software",
+    "creditos": 6
+  },
+  {
+    "id": "s6-redes-y-comunicacion-de-datos",
+    "semestre": 6,
+    "asignatura": "Redes y Comunicación de Datos",
+    "creditos": 6
+  },
+  {
+    "id": "s7-gestion-de-proyectos-informaticos",
+    "semestre": 7,
+    "asignatura": "Gestión de Proyectos Informáticos",
+    "creditos": 6
+  },
+  {
+    "id": "s7-computacion-en-la-nube",
+    "semestre": 7,
+    "asignatura": "Computación en la Nube",
+    "creditos": 6
+  },
+  {
+    "id": "s7-computacion-movil-y-web",
+    "semestre": 7,
+    "asignatura": "Computación Móvil y Web",
+    "creditos": 6
+  },
+  {
+    "id": "s7-electivo-de-formacion-especializada-i",
+    "semestre": 7,
+    "asignatura": "Electivo de Formación Especializada I",
+    "creditos": 4
+  },
+  {
+    "id": "s7-electivo-de-formacion-especializada-ii",
+    "semestre": 7,
+    "asignatura": "Electivo de Formación Especializada II",
+    "creditos": 4
+  },
+  {
+    "id": "s7-trabajo-de-titulo-i",
+    "semestre": 7,
+    "asignatura": "Trabajo de Título I",
+    "creditos": 4
+  },
+  {
+    "id": "s8-taller-de-innovacion-y-emprendimiento",
+    "semestre": 8,
+    "asignatura": "Taller de Innovación y Emprendimiento",
+    "creditos": 4
+  },
+  {
+    "id": "s8-trabajo-de-titulo-ii",
+    "semestre": 8,
+    "asignatura": "Trabajo de Título II",
+    "creditos": 4
+  },
+  {
+    "id": "s8-practica-profesional",
+    "semestre": 8,
+    "asignatura": "Práctica Profesional",
+    "creditos": 22
+  }
+]
