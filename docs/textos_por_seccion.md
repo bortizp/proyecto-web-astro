@@ -6,14 +6,14 @@ Título: Ingeniería en Informática UTEM
 
 Subtítulo: Información verificada para quienes evalúan estudiar esta carrera
 
-Texto:
+
 La carrera se imparte en la Universidad Tecnológica Metropolitana (UTEM) (dato) [F01].
 Esta página responde las dudas más frecuentes de estudiantes de enseñanza media y de sus familias.
 Cada cifra indica su fuente y su año. Si no hay un dato verificado, lo decimos.
 
 ## Sobre la carrera
 
-Texto:
+
 La UTEM imparte Ingeniería en Informática con el código de carrera 21030 (dato) [F02].
 Existen carreras afines que no son iguales a esta (interpretación del equipo).
 La Universidad de Santiago de Chile (USACH) ofrece Ingeniería Civil en Informática (dato) [F10].
@@ -26,16 +26,16 @@ He tenido una grata experiencia con los profesores y profesoras.
 
 ## Perfil de egreso
 
-Texto:
+
 El(La) Ingeniero(a) en Informática de la Universidad Tecnológica Metropolitana es un(a) profesional con sólida formación en ingeniería aplicada e informática, capacitado(a) para diseñar, desarrollar e integrar soluciones de software y sistemas de información, gestionar redes y recursos computacionales, y administrar tecnologías de la información, considerando criterios de seguridad, confiabilidad, calidad y eficiencia. Puede desempeñarse en organizaciones públicas, privadas y del tercer sector, contribuyendo al desarrollo tecnológico y organizacional mediante el uso de metodologías, herramientas y tecnologías vigentes. Complementa su formación disciplinar con competencias genéricas orientadas al aprendizaje continuo, la comunicación efectiva, el trabajo colaborativo, el emprendimiento, la innovación y el ejercicio profesional con responsabilidad social.
 
 ## Plan de estudios
 
-Texto:
+
 La Resolución Exenta N.° 03838, de 2022, aprueba el plan de estudios de Ingeniería en Informática, código 21030 (dato) [F02].
 El Departamento de Informática y Computación publica información académica complementaria (dato) [F03].
 ## Plan de estudios
-Texto:
+
 Año 1
 - Semestre I: Design Thinking, Introducción a la Matemática para Ingeniería, Introducción a la Ingeniería en Informática (actividad práctica de motivación), Algoritmos y Programación, Habilidades de Razonamiento Lógico.
 - Semestre II: Física General, Cálculo I, Álgebra I, Estructura de Datos, Habilidades de Trabajo Académico.
@@ -55,7 +55,7 @@ Año 4
 
 ## Campo laboral
 
-Texto:
+
 Mi Futuro es el buscador de empleabilidad e ingresos del Ministerio de Educación.
 En su edición 2025-2026, la empleabilidad de la carrera es 87,1 % al primer año de titulación (dato) [F13].
 Al segundo año llega a 96,5 % (dato) [F13].
@@ -66,7 +66,7 @@ En 2026, el área Tecnología sumó 396.770 matrículas de pregrado, el 28,9 % d
 
 ## Respaldo institucional
 
-Texto:
+
 La carrera tiene una certificación de calidad nacional e internacional por cinco años (dato) [F14].
 Rige desde el 16 de junio de 2025 hasta el 16 de junio de 2030 (dato) [F14].
 La otorgaron la Agencia Acreditadora de Chile y CONAIC, un organismo con sede en México (dato) [F14].
@@ -77,7 +77,7 @@ El Departamento de Informática y Computación registra 10 académicos y académ
 
 ## Admisión
 
-Texto:
+
 La carrera ingresa por la Prueba de Acceso a la Educación Superior (PAES) (dato) [F06].
 Según la UTEM, la página consultada el 8 de noviembre de 2026 informa 150 vacantes (dato) [F01].
 La matrícula cuesta $90.000 y el arancel anual es $4.763.300 (dato) [F01].
@@ -108,4 +108,4 @@ R6: No tenemos un dato verificado sobre esto.
 
 ## Referencias
 
-(Se arma sola desde la matriz de fuentes. No escribas nada aquí.)
+
