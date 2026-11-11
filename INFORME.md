@@ -154,7 +154,9 @@ Secciones obligatorias del sitio: Portada, Sobre la carrera, Perfil de egreso, P
 
 ## 6. Fase D – Redacción (Producto D)
 
-> **PENDIENTE.** Los textos finales están en archivos Markdown o JSON dentro del repositorio, en `src/content/`, separados por sección. Aquí se explican los criterios de redacción: oraciones de menos de 25 palabras, voz activa, siglas explicadas la primera vez, cada cifra con su año y su cita enlazada a Referencias, y distinción visual entre dato institucional, interpretación del equipo y testimonio.
+ Los textos finales están en `docs/textos_por_seccion.md` y se cargan en `src/content/`, separados por sección. Para escribirlos se aplicaron cuatro criterios: oraciones de menos de 25 palabras, voz activa, siglas explicadas la primera vez y cada cifra con su año y una cita [Fxx] enlazada a Referencias. Además, no se usaron frases publicitarias sin poco originales, como "la mejor carrera". Estos criterios responden a la encuesta: 3 de 6 personas desconfían de la información desactualizada y 2 de 6, de las cifras sin fuente.
+
+Cada afirmación se marcó según su tipo: (dato) para información institucional con fuente, (interpretación del equipo) para lo que el equipo concluye a partir de los datos y (testimonio) para opiniones personales de estudiantes. El sitio muestra esa distinción con una etiqueta visual. Antes de redactar, el Rol 1 definió en `docs/fuentes_por_seccion.md` qué se puede afirmar y qué no en cada sección. Cuando no había un dato verificado, el texto lo dice: "No tenemos un dato verificado sobre esto". 
 
 ---
 
