@@ -43,7 +43,7 @@ El contenido se planificó antes de construir la página, en cinco fases. Se hiz
 
 ## 3. Fase A – Matriz de fuentes (Producto A)
 
-Se evaluaron 18 fuentes (16 primarias y 2 secundarias) con cinco criterios: autoridad, vigencia, trazabilidad, objetividad y pertinencia. En la columna de evaluación, ✔ es "cumple" y ✘ es "no cumple"; la justificación de cada criterio está en el Anexo A1. Fecha de consulta de todas las fuentes: 8 de noviembre de 2026. "s. f." indica que la página no muestra fecha de publicación.
+Se evaluaron 19 fuentes (17 primarias y 2 secundarias) con cinco criterios: autoridad, vigencia, trazabilidad, objetividad y pertinencia. En la columna de evaluación, ✔ es "cumple" y ✘ es "no cumple"; la justificación de cada criterio está en el Anexo A1. Fecha de consulta de todas las fuentes: 8 de noviembre de 2026. "s. f." indica que la página no muestra fecha de publicación.
 
 | ID | Referencia (APA 7) | Tipo | Fecha del dato | Fecha de consulta | Evaluación | Sección donde se usa |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -65,12 +65,14 @@ Se evaluaron 18 fuentes (16 primarias y 2 secundarias) con cinco criterios: auto
 | F16 | Elige Tu Futuro. (s. f.). *Ingeniería en Informática en Macul - Universidad Tecnológica Metropolitana* [Datos SIES/Mineduc]. https://eligetufuturo.cl/carrera/ingenieria-en-informatica-universidad-tecnologica-metropolitana-sede-macul-diurna | Secundaria | Oferta 2026 (SIES); empleabilidad e ingreso: Mi Futuro 2025-2026 según el sitio | 8 nov 2026 | Autoridad ✘; Vigencia ✔; Trazabilidad ✘; Objetividad ✔; Pertinencia ✔ | Campo laboral (provisorio hasta confirmar en F13) |
 | F17 | Comisión Nacional de Acreditación. (s. f.). *Búsqueda avanzada de acreditaciones: institucional, Universidad Tecnológica Metropolitana* [Base de datos]. Recuperado el 8 de noviembre de 2026, de https://www.cnachile.cl/Paginas/buscador-avanzado.aspx | Primaria | Decisión vigente: acreditada, nivel avanzado, 5 años, del 26 mar 2026 al 26 mar 2031 | 8 nov 2026 | Autoridad ✔; Vigencia ✔; Trazabilidad ✘; Objetividad ✔; Pertinencia ✔ | Respaldo institucional |
 | F18 | Universidad Tecnológica Metropolitana, Departamento de Informática y Computación. (s. f.). *Académicos y académicas de jornada completa*. https://informatica.utem.cl/academicos-y-docentes/ | Primaria | s. f. (sin fecha de actualización visible) | 8 nov 2026 | Autoridad ✔; Vigencia ✘; Trazabilidad ✔; Objetividad ✔; Pertinencia ✔ | Respaldo institucional (cuerpo académico) |
+| F19 | World Economic Forum. (2025, 9 de enero). *Future of Jobs Report 2025: These are the fastest growing and declining jobs*. https://www.weforum.org/stories/2025/01/future-of-jobs-report-2025-the-fastest-growing-and-declining-jobs/ | Primaria | 9 ene 2025 | 11 nov 2026 | Autoridad ✔; Vigencia ✔; Trazabilidad ✔; Objetividad ✔; Pertinencia ✘ | Preguntas frecuentes |
 
 **Observaciones sobre las fuentes**
 
 - La UTEM está acreditada institucionalmente por la CNA, en nivel avanzado, por 5 años (26-mar-2026 a 26-mar-2031) (F17). Mi Futuro muestra 4 años, un dato anterior, y no se usa.
 - La carrera aparece en el buscador de la CNA solo con decisiones antiguas (2007, 2010 y 2014) y con acreditación voluntaria. La certificación vigente de la carrera (16-jun-2025 a 16-jun-2030) la otorgaron la Agencia Acreditadora de Chile y CONAIC, según la Facultad de Ingeniería de la UTEM (F14). Por eso el sitio no afirma que la carrera esté acreditada por la CNA.
 - Las cifras de empleabilidad e ingreso salen de Mi Futuro (F13): empleabilidad al primer año 87,1%, al segundo año 96,5% e ingreso al cuarto año de $2.200.000 a $2.300.000. La metodología indica que el ingreso viene de autodeclaraciones al SII.
+- La pregunta sobre IA se responde con una proyección mundial del Foro Económico Mundial (F19). No es un dato de Chile (Pertinencia ✘), por eso se presenta como proyección y no como garantía. Fecha de consulta: 11 de noviembre de 2026.
 - Las cifras de matrícula salen del Informe SIES 2026 (F12), páginas 5 y 7. Las cifras de prensa que no se encontraron en el informe no se usan.
 - La página de la UTEM lista ponderaciones que suman 110 y un "$90.000\*" sin nota; el sitio las muestra "según la UTEM" o no las usa.
 - Para el cuerpo académico se cita el listado del departamento (F18). La página de laboratorios está vacía, por lo que el sitio no trata ese tema.
@@ -137,9 +139,9 @@ Con 6 respuestas, los resultados son tendencias y no porcentajes de la població
 | 4 | Sobre la carrera | 3 de 6 preguntaron cuántos años dura y 2 de 6, cómo es la vida de estudiante. | F01, F09, F10, F11 |
 | 5 | Admisión | 3 de 6 preguntaron qué puntajes y requisitos piden. Empata con Sobre la carrera, que va antes porque suma otra duda. | F01, F06, F07 |
 | 6 | Perfil de egreso | 2 de 6 preguntaron qué se hace en el día a día. También responde a "solo se programa", con la que solo 1 de 6 estuvo de acuerdo. | F01, F03 |
-| 7 | Preguntas frecuentes | Reúne dudas y creencias: la IA (2 de 6 de acuerdo), "más para hombres" (2 de 6) y la matemática (acuerdo promedio de 3,0 de 5). | F06, F07, F08 |
+| 7 | Preguntas frecuentes | Reúne dudas y creencias: la IA (2 de 6 de acuerdo), "más para hombres" (2 de 6) y la matemática (acuerdo promedio de 3,0 de 5). | F06, F07, F08, F19 |
 | 8 | Respaldo institucional | Nadie preguntó por acreditación (0 de 6), por eso va casi al final. Es obligatoria y 2 de 6 desconfían de frases sin respaldo. | F04, F05, F14, F17, F18 |
-| 9 | Referencias | 3 de 6 desconfían de información desactualizada y 2 de 6 de cifras sin fuente. Cada cifra enlaza aquí. | F01 a F18 |.
+| 9 | Referencias | 3 de 6 desconfían de información desactualizada y 2 de 6 de cifras sin fuente. Cada cifra enlaza aquí. | F01 a F19 |.
 
    ![Wireframe móvil](docs/wireframe_movil.jpg)
    ![Wireframe escritorio](docs/wireframe_escritorio.jpg)

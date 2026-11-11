@@ -112,7 +112,7 @@ P5: ¿Qué puntajes y requisitos piden?
 R5: Según la página de la UTEM consultada el 8 de noviembre de 2026, no se pide puntaje ponderado mínimo. Sí se pide un promedio mínimo de 458 puntos entre Competencia Lectora y Matemática 1 (dato) [F01]. Se informan 150 vacantes (dato) [F01]. Las instrucciones generales de postulación están en el DEMRE (dato) [F08].
 
 P6: ¿La inteligencia artificial deja sin trabajo a los informáticos?
-R6: No tenemos un dato verificado sobre esto.
+R6: El Foro Económico Mundial proyecta a 2030 que los desarrolladores de software y aplicaciones estarán entre los empleos de mayor crecimiento, en el cuarto lugar de su ranking (dato) [F19]. El mismo informe estima que la IA y el procesamiento de información crearán 11 millones de empleos y reemplazarán 9 millones en el mundo (dato) [F19]. Es una proyección mundial basada en encuestas a empleadores, no un dato de Chile ni una garantía; que un rol crezca no significa que no cambie (interpretación del equipo).
 
 ## Referencias
 

@@ -1,6 +1,21 @@
 ---
+import { getCollection } from "astro:content";
+import Cita from "./Cita.astro";
+import Etiqueta from "./Etiqueta.astro";
+
+const preguntas = await getCollection("faq");
 ---
 <section id="preguntas-frecuentes">
   <h2>Preguntas frecuentes</h2>
-  <p>Texto de prueba</p>
+  {preguntas.map(({ data }) => (
+    <details>
+      <summary>{data.pregunta}</summary>
+      {data.respuesta.map((p) => (
+        <p>
+          {p.tipo && <Etiqueta tipo={p.tipo} />} {p.texto}
+          {p.fuentes.map((f) => <Cita id={f} />)}
+        </p>
+      ))}
+    </details>
+  ))}
 </section>

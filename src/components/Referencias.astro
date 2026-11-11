@@ -1,6 +1,27 @@
 ---
+import { getCollection } from "astro:content";
+
+const referencias = (await getCollection("referencias")).sort((a, b) =>
+  a.id.localeCompare(b.id),
+);
 ---
 <section id="referencias">
   <h2>Referencias</h2>
-  <p>Texto de prueba</p>
+  <p>
+    Cada cifra del sitio lleva un código [F01] a [F18] que apunta a esta lista.
+    Las fuentes primarias vienen de quien produce el dato; las secundarias solo
+    complementan.
+  </p>
+  <ol class="lista-referencias">
+    {referencias.map(({ id, data }) => (
+      <li id={id.toLowerCase()}>
+        <strong>[{id}]</strong> {data.referencia}
+        <span class="meta">
+          {data.tipo === "primaria" ? "Fuente primaria" : "Fuente secundaria"} ·
+          dato de {data.fechaDato} · consultada el {data.fechaConsulta}
+        </span>
+        <a href={data.url} rel="noopener noreferrer">Abrir fuente</a>
+      </li>
+    ))}
+  </ol>
 </section>

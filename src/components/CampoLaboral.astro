@@ -1,6 +1,25 @@
 ---
+import { getCollection } from "astro:content";
+import Cita from "./Cita.astro";
+
+const datos = await getCollection("campoLaboral");
 ---
 <section id="campo-laboral">
   <h2>Campo laboral</h2>
-  <p>Texto de prueba</p>
+  <dl class="cifras">
+    {datos.map(({ data }) => (
+      <div class="cifra">
+        <dt>{data.dato}</dt>
+        <dd>
+          <strong>{data.valor}</strong>
+          <span class="anio">({data.anio})</span>
+          <Cita id={data.fuenteId} />
+        </dd>
+      </div>
+    ))}
+  </dl>
+  <p class="nota">
+    Son promedios de egresados de años anteriores y no aseguran el resultado de
+    cada persona.
+  </p>
 </section>

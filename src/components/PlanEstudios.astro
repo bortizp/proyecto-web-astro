@@ -1,6 +1,44 @@
 ---
+import { getCollection } from "astro:content";
+import Cita from "./Cita.astro";
+
+const asignaturas = await getCollection("malla");
+const semestres = new Map<number, typeof asignaturas>();
+for (const a of asignaturas) {
+  const lista = semestres.get(a.data.semestre) ?? [];
+  lista.push(a);
+  semestres.set(a.data.semestre, lista);
+}
+const ordenados = [...semestres.entries()].sort((a, b) => a[0] - b[0]);
+const total = asignaturas.reduce((s, a) => s + (a.data.creditos ?? 0), 0);
 ---
 <section id="plan-de-estudios">
   <h2>Plan de estudios</h2>
-  <p>Texto de prueba</p>
+  <p>
+    La malla del rediseño tiene {ordenados.length} semestres y {total} créditos
+    transferibles <Cita id="F02" />.
+  </p>
+  <div class="semestres">
+    {ordenados.map(([semestre, lista]) => (
+      <article class="semestre">
+        <h3>
+          Semestre {semestre}
+          <small>({lista.reduce((s, a) => s + (a.data.creditos ?? 0), 0)} créditos)</small>
+        </h3>
+        <ul>
+          {lista.map((a) => (
+            <li>
+              {a.data.asignatura}
+              {a.data.creditos !== undefined && <span class="creditos">{a.data.creditos} cr.</span>}
+            </li>
+          ))}
+        </ul>
+      </article>
+    ))}
+  </div>
+  <p class="nota">
+    La página de la carrera en el sitio de la UTEM muestra una malla distinta a
+    la de la resolución <Cita id="F01" />. Conviene confirmar con la secretaría
+    de la carrera cuál rige para tu ingreso.
+  </p>
 </section>

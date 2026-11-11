@@ -160,5 +160,14 @@
     "fechaConsulta": "2026-11-08",
     "url": "https://informatica.utem.cl/academicos-y-docentes/",
     "seccion": "Respaldo institucional (cuerpo académico)"
+  },
+  {
+    "id": "F19",
+    "referencia": "World Economic Forum. (2025, 9 de enero). Future of Jobs Report 2025: These are the fastest growing and declining jobs. https://www.weforum.org/stories/2025/01/future-of-jobs-report-2025-the-fastest-growing-and-declining-jobs/",
+    "tipo": "primaria",
+    "fechaDato": "9 ene 2025",
+    "fechaConsulta": "2026-11-11",
+    "url": "https://www.weforum.org/stories/2025/01/future-of-jobs-report-2025-the-fastest-growing-and-declining-jobs/",
+    "seccion": "Preguntas frecuentes"
   }
 ]
