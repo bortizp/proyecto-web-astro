@@ -21,16 +21,18 @@ La propia UTEM ofrece Ingeniería Civil en Computación, mención Informática, 
 Antes de comparar, revisa la duración, la malla y el perfil de cada carrera en su página oficial (interpretación del equipo).
 
 Vida de estudiante (testimonio del equipo, opinión personal):
-En la carrera de ingeniería informática me a ayudado a hacer amigos.
+En la carrera de ingeniería informática me ha ayudado a hacer amigos.
 He tenido una grata experiencia con los profesores y profesoras.
 
 ## Perfil de egreso
 
-
-El(La) Ingeniero(a) en Informática de la Universidad Tecnológica Metropolitana es un(a) profesional con sólida formación en ingeniería aplicada e informática, capacitado(a) para diseñar, desarrollar e integrar soluciones de software y sistemas de información, gestionar redes y recursos computacionales, y administrar tecnologías de la información, considerando criterios de seguridad, confiabilidad, calidad y eficiencia. Puede desempeñarse en organizaciones públicas, privadas y del tercer sector, contribuyendo al desarrollo tecnológico y organizacional mediante el uso de metodologías, herramientas y tecnologías vigentes. Complementa su formación disciplinar con competencias genéricas orientadas al aprendizaje continuo, la comunicación efectiva, el trabajo colaborativo, el emprendimiento, la innovación y el ejercicio profesional con responsabilidad social.
+Quien se titula de Ingeniería en Informática UTEM sabe diseñar, desarrollar software y sistemas de información (dato) [F01].
+También gestiona redes, recursos computacionales y administra tecnologías de la información (dato) [F01].
+Cuida la seguridad, la confiabilidad, la calidad y la eficiencia de las soluciones (dato) [F01].
+Puede trabajar en organizaciones públicas, privadas y del tercer sector (dato) [F01].
+La formación suma aprendizaje continuo, comunicación, trabajo en equipo, emprendimiento y responsabilidad social (dato) [F01].
 
 ## Plan de estudios
-
 
 La Resolución Exenta N.° 03838, de 2022, aprueba el plan de estudios de Ingeniería en Informática, código 21030 (dato) [F02].
 El Departamento de Informática y Computación publica información académica complementaria (dato) [F03].
@@ -49,7 +51,7 @@ Año 3
 - Semestre VI: Evaluación de Proyectos de Software, Fundamentos de Data Science, Redes y Comunicación de Datos, Computación Web y Móvil, Electivo de Profundización Profesional I (articulación pregrado-postgrado).
 
 Año 4
-- Semestre VII: Computación en la Nube, Gestión de Proyectos Informáticos, Cyberseguridad, Electivo de Profundización Profesional II (articulación pregrado-postgrado), Electivo de Profundización Profesional III (articulación pregrado-postgrado).
+-Semestre VII: Computación en la Nube, Gestión de Proyectos Informáticos, Cyberseguridad, Electivo de Profundización Profesional II (articulación pregrado-postgrado), Electivo de Profundización Profesional III (articulación pregrado-postgrado).
 -Semestre VIII:  Actividad Integradora de Certificación de Grado y Título Profesional, Práctica Profesional, Taller de Empleabilidad
 
 
