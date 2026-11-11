@@ -129,7 +129,17 @@ Con 6 respuestas, los resultados son tendencias y no porcentajes de la població
 
 ## 5. Fase C – Arquitectura de información (Producto C)
 
-> **PENDIENTE.** Aquí va el mapa de contenidos con el orden de las secciones justificado a partir de la Fase B, los wireframes de baja fidelidad en móvil y escritorio, y la relación entre cada sección y sus fuentes (por ID de la matriz).
+| Orden | Sección | Por qué va en este lugar | Fuentes (IDs) |
+| ----- | ------- | ------------------------ | ------------- |
+| 1 | Portada | Las personas conocen la carrera "a medias" (3,0 de 5 en promedio). La portada la presenta en pocas líneas y lleva a lo más buscado. | F01 |
+| 2 | Campo laboral | 4 de 6 personas preguntaron si hay trabajo al titularse y 3 de 6, cuánto se gana. | F12, F13, F15 |
+| 3 | Plan de estudios | 4 de 6 preguntaron cuánta matemática hay y 2 de 6, qué se estudia. | F02, F03 |
+| 4 | Sobre la carrera | 3 de 6 preguntaron cuántos años dura y 2 de 6, cómo es la vida de estudiante. | F01, F09, F10, F11 |
+| 5 | Admisión | 3 de 6 preguntaron qué puntajes y requisitos piden. Empata con Sobre la carrera, que va antes porque suma otra duda. | F01, F06, F07 |
+| 6 | Perfil de egreso | 2 de 6 preguntaron qué se hace en el día a día. También responde a "solo se programa", con la que solo 1 de 6 estuvo de acuerdo. | F01, F03 |
+| 7 | Preguntas frecuentes | Reúne dudas y creencias: la IA (2 de 6 de acuerdo), "más para hombres" (2 de 6) y la matemática (acuerdo promedio de 3,0 de 5). | F06, F07, F08 |
+| 8 | Respaldo institucional | Nadie preguntó por acreditación (0 de 6), por eso va casi al final. Es obligatoria y 2 de 6 desconfían de frases sin respaldo. | F04, F05, F14, F17, F18 |
+| 9 | Referencias | 3 de 6 desconfían de información desactualizada y 2 de 6 de cifras sin fuente. Cada cifra enlaza aquí. | F01 a F18 |.
 
 Secciones obligatorias del sitio: Portada, Sobre la carrera, Perfil de egreso, Plan de estudios, Campo laboral, Respaldo institucional, Admisión, Preguntas frecuentes y Referencias.
 
