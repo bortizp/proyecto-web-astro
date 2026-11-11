@@ -141,6 +141,9 @@ Con 6 respuestas, los resultados son tendencias y no porcentajes de la població
 | 8 | Respaldo institucional | Nadie preguntó por acreditación (0 de 6), por eso va casi al final. Es obligatoria y 2 de 6 desconfían de frases sin respaldo. | F04, F05, F14, F17, F18 |
 | 9 | Referencias | 3 de 6 desconfían de información desactualizada y 2 de 6 de cifras sin fuente. Cada cifra enlaza aquí. | F01 a F18 |.
 
+   ![Wireframe móvil](docs/wireframe_movil.jpg)
+   ![Wireframe escritorio](docs/wireframe_escritorio.jpg)
+
 Secciones obligatorias del sitio: Portada, Sobre la carrera, Perfil de egreso, Plan de estudios, Campo laboral, Respaldo institucional, Admisión, Preguntas frecuentes y Referencias.
 
 | Orden | Sección | Por qué va en este lugar | Fuentes (IDs) |
