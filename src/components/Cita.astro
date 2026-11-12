@@ -4,4 +4,4 @@ interface Props {
 }
 const { id } = Astro.props;
 ---
-<sup class="cita"><a href={`#${id.toLowerCase()}`} aria-label={`Fuente ${id}`}>[{id}]</a></sup>
+<a class="citation" href={`#${id.toLowerCase()}`} aria-label={`Fuente ${id}`}>[{id}]</a>

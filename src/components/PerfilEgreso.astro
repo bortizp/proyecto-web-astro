@@ -1,17 +1,69 @@
 ---
 import Cita from "./Cita.astro";
+import Etiqueta from "./Etiqueta.astro";
+import Eyebrow from "./Eyebrow.astro";
+
+// Cada capacidad resume un punto del perfil publicado por la UTEM (F01).
+// "En la malla" es nuestra relación con ramos de la resolución (F02): interpretación.
+const capacidades = [
+  {
+    n: "01",
+    titulo: "Diseñar y desarrollar",
+    texto: "Soluciones de software y sistemas de información, e integrarlas.",
+    malla: "Algoritmos y Programación, Ingeniería de Software, Computación Móvil y Web",
+  },
+  {
+    n: "02",
+    titulo: "Gestionar",
+    texto: "Redes y recursos computacionales, y administrar tecnologías de la información.",
+    malla: "Redes y Comunicación de Datos, Sistemas Operativos, Computación en la Nube",
+  },
+  {
+    n: "03",
+    titulo: "Asegurar",
+    texto: "Seguridad, confiabilidad, calidad y eficiencia de cada solución.",
+    malla: "Ciberseguridad, Análisis de Algoritmos, Desarrollo Ágil",
+  },
+  {
+    n: "04",
+    titulo: "Trabajar en cualquier sector",
+    texto: "Organizaciones públicas, privadas y del tercer sector.",
+    malla: "Práctica Profesional, Evaluación de Proyectos Informáticos",
+  },
+  {
+    n: "05",
+    titulo: "Seguir creciendo",
+    texto: "Aprendizaje continuo, comunicación, trabajo en equipo, emprendimiento e innovación.",
+    malla: "Taller de Innovación y Emprendimiento, Gestión de Proyectos Informáticos",
+  },
+];
 ---
-<section id="perfil-de-egreso">
-  <h2>Perfil de egreso</h2>
-  <p>Quien se titula de Ingeniería en Informática UTEM:</p>
-  <ul>
-    <li>Sabe diseñar y desarrollar software y sistemas de información <Cita id="F01" />.</li>
-    <li>Gestiona redes y recursos computacionales, y administra tecnologías de la información <Cita id="F01" />.</li>
-    <li>Cuida la seguridad, la confiabilidad, la calidad y la eficiencia de las soluciones <Cita id="F01" />.</li>
-    <li>Puede trabajar en organizaciones públicas, privadas y del tercer sector <Cita id="F01" />.</li>
-    <li>
-      Su formación suma aprendizaje continuo, comunicación, trabajo en equipo,
-      emprendimiento y responsabilidad social <Cita id="F01" />.
-    </li>
-  </ul>
+<section id="perfil-de-egreso" class="section profile">
+  <div class="section-heading compact">
+    <Eyebrow>Perfil de egreso</Eyebrow>
+    <h2>¿Qué deberías poder hacer al salir?</h2>
+    <p>
+      No una lista de adjetivos: cinco capacidades concretas, resumidas del
+      perfil de egreso que publica la universidad <Cita id="F01" />.
+    </p>
+  </div>
+  <div class="capability-grid">
+    {capacidades.map((c) => (
+      <article class="capability">
+        <span>{c.n}</span>
+        <h3>{c.titulo}</h3>
+        <p>{c.texto} <Cita id="F01" /></p>
+        <p class="in-curriculum">En la malla: {c.malla} <Cita id="F02" /></p>
+      </article>
+    ))}
+  </div>
+  <div class="interpretation">
+    <Etiqueta tipo="interpretacion" naranjo />
+    <p>
+      La relación entre cada capacidad y los ramos de la malla es nuestra
+      lectura, no un dato oficial. El título no te encierra en un cargo: te
+      entrega una base amplia y la especialización suele llegar con electivos,
+      práctica y proyectos.
+    </p>
+  </div>
 </section>

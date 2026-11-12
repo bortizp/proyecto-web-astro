@@ -20,6 +20,7 @@ const malla = defineCollection({
     semestre: z.number().int().min(1).max(12),
     orden: z.number().int().positive(),
     asignatura: z.string(),
+    area: z.enum(["base", "informatica", "proyecto"]),
     creditos: z.number().optional(),
   }),
 });

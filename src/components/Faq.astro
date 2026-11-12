@@ -2,22 +2,38 @@
 import { getCollection } from "astro:content";
 import Cita from "./Cita.astro";
 import Etiqueta from "./Etiqueta.astro";
+import Eyebrow from "./Eyebrow.astro";
 
 const preguntas = (await getCollection("faq")).sort(
   (a, b) => a.data.orden - b.data.orden,
 );
 ---
-<section id="preguntas-frecuentes">
-  <h2>Preguntas frecuentes</h2>
-  {preguntas.map(({ data }) => (
-    <details>
-      <summary>{data.pregunta}</summary>
-      {data.respuesta.map((p) => (
-        <p>
-          {p.tipo && <Etiqueta tipo={p.tipo} />} {p.texto}
-          {p.fuentes.map((f) => <Cita id={f} />)}
-        </p>
-      ))}
-    </details>
-  ))}
+<section id="preguntas-frecuentes" class="section faq">
+  <div class="section-heading compact">
+    <Eyebrow>Preguntas frecuentes</Eyebrow>
+    <h2>Lo que queríamos saber antes de entrar.</h2>
+    <p>
+      Cada respuesta indica si es un dato con fuente o una interpretación
+      nuestra. Si no tenemos un dato verificado, lo decimos.
+    </p>
+  </div>
+  <div class="accordion">
+    {preguntas.map(({ data }, i) => (
+      <details open={i === 0}>
+        <summary>
+          <span aria-hidden="true">{String(data.orden).padStart(2, "0")}</span>
+          {data.pregunta}
+          <i aria-hidden="true"></i>
+        </summary>
+        <div class="answer">
+          {data.respuesta.map((p) => (
+            <p>
+              {p.tipo && <Etiqueta tipo={p.tipo} enLinea naranjo />}
+              {p.texto} {p.fuentes.map((f) => <Cita id={f} />)}
+            </p>
+          ))}
+        </div>
+      </details>
+    ))}
+  </div>
 </section>

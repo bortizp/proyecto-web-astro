@@ -64,8 +64,26 @@
     ]
   },
   {
-    "id": "cuanto-se-gana",
+    "id": "todo-el-dia-programando",
     "orden": 4,
+    "pregunta": "¿Informática es estar todo el día programando?",
+    "respuesta": [
+      {
+        "texto": "No solo eso. La malla tiene ramos de programación, pero también matemáticas, ciencias, inglés, economía, gestión de proyectos y emprendimiento.",
+        "tipo": "dato",
+        "fuentes": [
+          "F02"
+        ]
+      },
+      {
+        "texto": "Programar es central, pero la carrera es más amplia que aprender un lenguaje.",
+        "tipo": "interpretacion"
+      }
+    ]
+  },
+  {
+    "id": "cuanto-se-gana",
+    "orden": 5,
     "pregunta": "¿Cuánto se gana?",
     "respuesta": [
       {
@@ -83,7 +101,7 @@
   },
   {
     "id": "puntajes-requisitos",
-    "orden": 5,
+    "orden": 6,
     "pregunta": "¿Qué puntajes y requisitos piden?",
     "respuesta": [
       {
@@ -110,8 +128,62 @@
     ]
   },
   {
+    "id": "otras-vias",
+    "orden": 7,
+    "pregunta": "¿Hay otras vías de ingreso además de la PAES?",
+    "respuesta": [
+      {
+        "texto": "La UTEM menciona el Programa Propedéutico: quienes ingresan por esa vía tienen una rebaja del 100 % en la matrícula.",
+        "tipo": "dato",
+        "fuentes": [
+          "F01"
+        ]
+      },
+      {
+        "texto": "Las vías especiales y sus requisitos pueden cambiar cada año. Confírmalas en Admisión UTEM antes de postular.",
+        "tipo": "interpretacion"
+      }
+    ]
+  },
+  {
+    "id": "gratuidad",
+    "orden": 8,
+    "pregunta": "¿La Gratuidad cubre la matrícula?",
+    "respuesta": [
+      {
+        "texto": "Según la UTEM, si cuentas con Gratuidad, el beneficio cubre la matrícula de $90.000.",
+        "tipo": "dato",
+        "fuentes": [
+          "F01"
+        ]
+      },
+      {
+        "texto": "Tener Gratuidad depende de tu situación socioeconómica y de los requisitos vigentes de cada año.",
+        "tipo": "interpretacion"
+      }
+    ]
+  },
+  {
+    "id": "computador",
+    "orden": 9,
+    "pregunta": "¿Necesito un computador muy potente?",
+    "respuesta": [
+      {
+        "texto": "La página de la carrera no publica requisitos de computador ni de equipo.",
+        "tipo": "dato",
+        "fuentes": [
+          "F01"
+        ]
+      },
+      {
+        "texto": "No tenemos un dato verificado sobre qué equipo conviene. Antes de comprar, pregunta en la carrera qué programas vas a usar.",
+        "tipo": "interpretacion"
+      }
+    ]
+  },
+  {
     "id": "inteligencia-artificial",
-    "orden": 6,
+    "orden": 10,
     "pregunta": "¿La inteligencia artificial deja sin trabajo a los informáticos?",
     "respuesta": [
       {
