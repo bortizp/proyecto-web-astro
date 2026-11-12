@@ -1,13 +1,15 @@
 ---
+// Admisión: cifras clave, tabla de ponderaciones (F01) y checklist. La suma de 110 % se
+// explica como interpretación del equipo, porque la UTEM no lo aclara.
 import Cita from "./Cita.astro";
 import Etiqueta from "./Etiqueta.astro";
 import Eyebrow from "./Eyebrow.astro";
 
 // Nombres tal como los publica la UTEM en la página de la carrera (F01).
 const ponderaciones = [
-  ["NEM", "Notas de Enseñanza Media", "10 %"],
+  ["NEM", "Notas de Enseñanza Media (NEM)", "10 %"],
   ["Ranking", "Ranking de notas", "25 %"],
-  ["Competencia Lectora", "PAES", "20 %"],
+  ["Competencia Lectora (CL)", "PAES", "20 %"],
   ["Competencia Matemática 1 (M1)", "PAES", "30 %"],
   ["Competencia Matemática 2 (M2)", "PAES", "5 %"],
   ["Electiva de Ciencias", "PAES", "10 %"],
@@ -23,12 +25,14 @@ const ponderaciones = [
     <p>
       La UTEM admite a sus estudiantes de pregrado por la Prueba de Acceso a la
       Educación Superior (PAES) <Cita id="F06" />. Los datos de abajo son los
-      que publica la universidad para esta carrera <Cita id="F01" />.
+      que publica la universidad para esta carrera <Cita id="F01" />. La página
+      no indica el año del proceso; consultamos las cifras el 8 de noviembre de
+      2026, así que confírmalas antes de postular.
     </p>
   </div>
   <dl class="key-figures">
     <div><dt>Vacantes</dt><dd>150 <Cita id="F01" /></dd></div>
-    <div><dt>Promedio mín. CL y M1</dt><dd>458 pts. <Cita id="F01" /></dd></div>
+    <div><dt>Promedio mínimo entre Competencia Lectora (CL) y Matemática 1 (M1)</dt><dd>458 pts. <Cita id="F01" /></dd></div>
     <div><dt>Matrícula</dt><dd>$90.000 <Cita id="F01" /></dd></div>
     <div><dt>Arancel anual</dt><dd>$4.763.300 <Cita id="F01" /></dd></div>
   </dl>
@@ -65,7 +69,7 @@ const ponderaciones = [
         <li>Revisé vacantes y requisitos del año.</li>
         <li>Calculé mi puntaje con las ponderaciones.</li>
         <li>Comparé la malla, no solo el nombre de la carrera.</li>
-        <li>Revisé las fechas del proceso en el DEMRE <Cita id="F07" />.</li>
+        <li>Revisé las fechas del proceso en el Departamento de Evaluación, Medición y Registro Educacional (DEMRE) <Cita id="F07" />.</li>
         <li>Leí las instrucciones de postulación <Cita id="F08" />.</li>
       </ul>
       <a class="button dark" href="https://www.utem.cl/admision/admision-acceso-via-paes/" rel="noopener noreferrer">

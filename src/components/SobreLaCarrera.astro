@@ -1,4 +1,6 @@
 ---
+// Sobre la carrera: datos generales (F01, F02), respuesta a "¿tengo que saber programar?"
+// y testimonio. El arreglo `testimonios` solo admite opiniones reales con autorización.
 import Cita from "./Cita.astro";
 import Etiqueta from "./Etiqueta.astro";
 import Eyebrow from "./Eyebrow.astro";
@@ -31,10 +33,10 @@ const testimonios = [
   <div class="about-grid">
     <div class="big-copy">
       <dl class="fact-row">
-        <div><dt>Código DEMRE</dt><dd>21030 <Cita id="F01" /></dd></div>
-        <div><dt>Duración</dt><dd>8 sem. <Cita id="F01" /></dd></div>
-        <div><dt>Créditos</dt><dd>240 SCT <Cita id="F02" /></dd></div>
-        <div><dt>Vacantes</dt><dd>150 <Cita id="F01" /></dd></div>
+        <div><dt>Código DEMRE (Departamento de Evaluación, Medición y Registro Educacional)</dt><dd>21030 <Cita id="F01" /></dd></div>
+        <div><dt>Duración</dt><dd>8 semestres <Cita id="F01" /></dd></div>
+        <div><dt>Créditos transferibles (SCT)</dt><dd>240 <Cita id="F02" /></dd></div>
+        <div><dt>Vacantes (consulta nov. 2026)</dt><dd>150 <Cita id="F01" /></dd></div>
       </dl>
       <p>
         La malla combina tres tipos de ramos: base matemática y científica,
@@ -44,12 +46,12 @@ const testimonios = [
     </div>
     <aside class="note-card" aria-labelledby="pregunta-programar">
       <Etiqueta tipo="dato" naranjo />
-      <h3 id="pregunta-programar">La pregunta que más nos hacen</h3>
+      <h3 id="pregunta-programar">Una duda frecuente</h3>
       <p>“¿Tengo que saber programar antes de entrar?”</p>
       <strong>No.</strong>
       <p>
-        La admisión pondera tus notas y pruebas PAES. Ninguna de ellas mide
-        programación <Cita id="F01" />.
+        La admisión pondera tus notas y las pruebas de la Prueba de Acceso a la
+        Educación Superior (PAES). Ninguna de ellas mide programación <Cita id="F01" />.
       </p>
     </aside>
     <div>
@@ -65,7 +67,7 @@ const testimonios = [
   <div class="interpretation related">
     <Etiqueta tipo="interpretacion" naranjo />
     <div>
-      <p>Hay carreras afines, pero no son iguales a esta:</p>
+      <p>Hay carreras afines, pero no son iguales a esta. La diferencia está en la duración, el título y la universidad:</p>
       <ul>
         <li>
           La Universidad de Santiago de Chile (USACH) ofrece Ingeniería Civil en

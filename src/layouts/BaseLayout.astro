@@ -10,7 +10,11 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
-const base = import.meta.env.BASE_URL;
+// Dirección base del sitio (GitHub Pages publica bajo /proyecto-web-astro).
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+// URL absoluta de la página y de la imagen para redes (Open Graph).
+const urlPagina = new URL(Astro.url.pathname, Astro.site).href;
+const urlImagen = new URL(`${base}/og.png`, Astro.site).href;
 const secciones = [
   ["sobre-la-carrera", "Carrera"],
   ["perfil-de-egreso", "Perfil"],
@@ -32,7 +36,18 @@ const secciones = [
     <meta name="description" content={description} />
     <meta name="theme-color" content="#10233f" />
     <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
-    <link rel="icon" href={`${base}/favicon.ico`} />
+    <link rel="canonical" href={urlPagina} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CL" />
+    <meta property="og:site_name" content="Informática UTEM, por estudiantes" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={urlPagina} />
+    <meta property="og:image" content={urlImagen} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Texto «Informática, sin venderte humo» sobre fondo azul oscuro" />
+    <meta name="twitter:card" content="summary_large_image" />
     <title>{title}</title>
   </head>
   <body>

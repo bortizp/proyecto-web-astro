@@ -1,4 +1,6 @@
 ---
+// Portada: titular, título/grado/jornada de la carrera y tres cifras clave con su fuente.
+// Los textos son fijos; las cifras llevan <Cita> que enlaza a Referencias.
 import Cita from "./Cita.astro";
 ---
 <section id="portada" class="hero">
@@ -9,6 +11,11 @@ import Cita from "./Cita.astro";
       Una guía hecha por estudiantes de Ingeniería en Informática de la UTEM
       para entender qué se estudia, cuánto dura y qué viene después. Con datos
       públicos, su fuente y las dudas que nosotros también tuvimos.
+    </p>
+    <p class="hero-degree">
+      Universidad Tecnológica Metropolitana (UTEM) · Título de Ingeniera o
+      Ingeniero en Informática y grado de Licenciada o Licenciado en
+      Informática · Jornada diurna <Cita id="F01" />
     </p>
     <div class="hero-actions">
       <a class="button primary" href="#sobre-la-carrera">Partir por lo básico <span aria-hidden="true">↓</span></a>
@@ -38,7 +45,8 @@ import Cita from "./Cita.astro";
   </div>
   <div class="hero-foot">
     <span>8 semestres <Cita id="F01" /></span>
-    <span>240 créditos SCT <Cita id="F02" /></span>
+    <span>240 créditos transferibles (SCT) <Cita id="F02" /></span>
     <span>Campus Macul · Ñuñoa <Cita id="F01" /></span>
+    <span class="updated">Datos revisados en noviembre de 2026</span>
   </div>
 </section>

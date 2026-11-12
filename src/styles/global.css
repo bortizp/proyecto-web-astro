@@ -1416,3 +1416,39 @@ details[open] summary i::after {
   white-space: nowrap;
   border: 0;
 }
+
+/* ---------- Ajustes de revisión ---------- */
+.hero-degree {
+  max-width: 560px;
+  margin: 18px 0 0;
+  font: 500 13px/1.6 var(--mono);
+  color: var(--ink);
+}
+.hero-foot .updated {
+  margin-left: auto;
+  color: var(--muted);
+}
+@media (max-width: 1100px) {
+  /* En tablet y celular el dibujo va debajo de la ventana de código, sin taparla. */
+  .hero-visual {
+    flex-direction: column;
+    min-height: 0;
+    gap: 28px;
+    padding-top: 10px;
+  }
+  .hero-visual svg {
+    position: static;
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+  }
+  .hero-visual .scribble {
+    position: static;
+    width: auto;
+    margin: 0;
+    transform: rotate(-2deg);
+  }
+}
+.hero-degree + .hero-actions {
+  margin-top: 28px;
+}
