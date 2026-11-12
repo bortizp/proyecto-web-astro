@@ -1,25 +1,85 @@
 ---
+// Campo laboral: lee la colección `campoLaboral` (cifras con año y fuente) y las muestra
+// en tarjetas. Si falta un dato obligatorio, el sitio no se construye.
 import { getCollection } from "astro:content";
 import Cita from "./Cita.astro";
+import Etiqueta from "./Etiqueta.astro";
+import Eyebrow from "./Eyebrow.astro";
 
 const datos = await getCollection("campoLaboral");
+const porId = Object.fromEntries(datos.map((d) => [d.id, d.data]));
+const e1 = porId["empleabilidad-1er-anio"];
+const e2 = porId["empleabilidad-2do-anio"];
+const ingreso = porId["ingreso-4to-anio"];
+const matricula = porId["matricula-tecnologia-pregrado"];
+const porcentaje = porId["matricula-tecnologia-porcentaje"];
+const rango = ingreso.valor.split(" a ");
+const sinPorcentaje = (v: string) => v.replace(/\s*%$/, "");
+
+// Áreas que nombra la UTEM como campo de desarrollo profesional (F01)
+// y ramos de la malla (F02).
+const areas = [
+  ["Desarrollo de software", "F01"],
+  ["Dirección de proyectos informáticos", "F01"],
+  ["Administración de sistemas", "F01"],
+  ["Redes de datos", "F01"],
+  ["Auditoría informática", "F01"],
+  ["Datos, ciberseguridad y nube", "F02"],
+];
 ---
-<section id="campo-laboral">
-  <h2>Campo laboral</h2>
-  <dl class="cifras">
-    {datos.map(({ data }) => (
-      <div class="cifra">
-        <dt>{data.dato}</dt>
-        <dd>
-          <strong>{data.valor}</strong>
-          <span class="anio">({data.anio})</span>
-          <Cita id={data.fuenteId} />
-        </dd>
-      </div>
-    ))}
-  </dl>
-  <p class="nota">
-    Son promedios de egresados de años anteriores y no aseguran el resultado de
-    cada persona.
-  </p>
+<section id="campo-laboral" class="section outcomes">
+  <div class="section-heading split-heading">
+    <div>
+      <Eyebrow>Campo laboral</Eyebrow>
+      <h2>Los números,<br />con letra chica.</h2>
+    </div>
+    <p>
+      Son indicadores de personas tituladas de esta carrera, publicados por Mi
+      Futuro en su edición 2025-2026. Son promedios: no son una promesa para
+      cada persona <Cita id="F13" />.
+    </p>
+  </div>
+  <div class="stat-grid">
+    <article class="stat-card light">
+      <Etiqueta tipo="dato" naranjo />
+      <strong>{sinPorcentaje(e1.valor)}<small>%</small></strong>
+      <h3>Empleabilidad al primer año</h3>
+      <p>Medido al primer año después de titularse. Mi Futuro, edición 2025-2026.</p> <Cita id={e1.fuenteId} />
+    </article>
+    <article class="stat-card blue">
+      <Etiqueta tipo="dato" />
+      <strong>{sinPorcentaje(e2.valor)}<small>%</small></strong>
+      <h3>Empleabilidad al segundo año</h3>
+      <p>El indicador sube al mirar un año más de inserción laboral.</p> <Cita id={e2.fuenteId} />
+    </article>
+    <article class="stat-card cream">
+      <Etiqueta tipo="dato" naranjo />
+      <strong class="range">{rango[0]}<small>a {rango[1]}</small></strong>
+      <h3>Ingreso promedio al cuarto año</h3>
+      <p>Rango de ingreso promedio informado en la edición 2025-2026 de Mi Futuro. No es un sueldo garantizado.</p> <Cita id={ingreso.fuenteId} />
+    </article>
+  </div>
+  <div class="context-strip">
+    <p>
+      <strong>Contexto:</strong> en {matricula.anio}, el área Tecnología sumó {matricula.valor} matrículas de pregrado en Chile, según el Servicio de Información de Educación Superior (SIES), el {porcentaje.valor} del total <Cita id={matricula.fuenteId} />.
+    </p>
+  </div>
+  <div class="jobs">
+    <div>
+      <h3>¿En qué se traduce?</h3>
+      <p>
+        Áreas que la UTEM nombra como campo de desarrollo profesional, más las
+        que aparecen en la malla.
+      </p>
+    </div>
+    <ul class="job-list">
+      {areas.map(([area, fuente], i) => (
+        <li><b>{String(i + 1).padStart(2, "0")}</b>{area} <Cita id={fuente} /></li>
+      ))}
+      <li class="more">
+        <b>07</b><strong>Y mucho más.</strong> Con electivos, práctica y proyectos
+        propios aparecen especializaciones que esta lista no alcanza a cubrir. <Etiqueta tipo="interpretacion" enLinea naranjo />
+      </li>
+    </ul>
+  </div>
 </section>

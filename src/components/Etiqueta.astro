@@ -1,12 +1,15 @@
 ---
+// Etiqueta visible: distingue dato, interpretación y testimonio (con texto, no solo color).
 interface Props {
   tipo: "dato" | "interpretacion" | "testimonio";
+  enLinea?: boolean;
+  naranjo?: boolean;
 }
-const { tipo } = Astro.props;
+const { tipo, enLinea = false, naranjo = false } = Astro.props;
 const nombres = {
   dato: "Dato",
   interpretacion: "Interpretación",
   testimonio: "Testimonio",
 };
 ---
-<span class={`etiqueta etiqueta-${tipo}`}>{nombres[tipo]}</span>
+<span class:list={["tag", `tag-${tipo}`, { "tag-inline": enLinea, "tag-orange": naranjo }]}>{nombres[tipo]}</span>

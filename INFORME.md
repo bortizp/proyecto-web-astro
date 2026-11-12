@@ -3,7 +3,7 @@
 **Asignatura:** EFE685 – Departamento de Informática y Computación, Universidad Tecnológica Metropolitana (UTEM)
 **Docente:** Sebastián Salazar Molina
 **Fecha de entrega:** 13 de noviembre de 2026
-**Sitio publicado:** [pegar URL del sitio]
+**Sitio publicado:** [https://bortizp.github.io/proyecto-web-astro/](https://bortizp.github.io/proyecto-web-astro/)
 **Repositorio:** [Repositorio](https://github.com/bortizp/proyecto-web-astro.git)
 
 ## Integrantes
@@ -148,10 +148,6 @@ Con 6 respuestas, los resultados son tendencias y no porcentajes de la població
 
 Secciones obligatorias del sitio: Portada, Sobre la carrera, Perfil de egreso, Plan de estudios, Campo laboral, Respaldo institucional, Admisión, Preguntas frecuentes y Referencias.
 
-| Orden | Sección | Por qué va en este lugar | Fuentes (IDs) |
-| ----- | ------- | ------------------------ | ------------- |
-| 1     | Portada | [completar]              | [completar]   |
-
 ---
 
 ## 6. Fase D – Redacción (Producto D)
@@ -174,7 +170,27 @@ Cada afirmación se marcó según su tipo: (dato) para información instituciona
 
 ## 8. Decisiones de implementación
 
-> **PENDIENTE.** Explicar con palabras simples por qué se tomaron las decisiones técnicas: uso de Astro, contenido separado del diseño en colecciones validadas (si un dato no cumple el esquema, el sitio no se construye), un componente por sección y un diseño base común, y la justificación de la isla interactiva si se incluye.
+Esta sección explica, con palabras simples, por qué el sitio está construido como está.
+
+**Astro y casi nada de JavaScript.** Se usó Astro porque arma el sitio completo antes de publicarlo y entrega páginas HTML listas. El navegador del visitante no tiene que ejecutar programas para leer el contenido. Por eso el sitio carga rápido y funciona aunque el celular sea antiguo. El sitio no incluye ninguna isla interactiva: todo el contenido es estático, y el menú, las preguntas frecuentes y los enlaces usan solo HTML y CSS.
+
+**Contenido separado del diseño.** Los datos viven en archivos JSON dentro de `src/content/`: referencias, malla curricular, campo laboral y preguntas frecuentes. Los componentes solo los muestran. Así, quien actualice una cifra no necesita tocar el diseño.
+
+**Datos validados.** Cada archivo de datos tiene un esquema en `src/content.config.ts`, escrito en TypeScript en modo estricto. Si un dato no cumple el esquema, el sitio no se construye. Ejemplos de reglas: toda cifra de campo laboral lleva año y un código de fuente con formato `F00`; toda respuesta marcada como "dato" exige al menos una fuente; toda referencia exige una dirección web válida. Así se evita publicar una cifra sin respaldo por descuido.
+
+**Un componente por sección.** Cada una de las nueve secciones obligatorias es un archivo `.astro` en `src/components/`. Un diseño base común (`src/layouts/BaseLayout.astro`) aporta el encabezado, el menú, el pie de página y las etiquetas de buscadores y redes sociales. La página (`src/pages/index.astro`) solo ordena los componentes.
+
+**Dato, interpretación y testimonio se ven distintos.** Los componentes `Etiqueta` y `Cita` marcan cada afirmación. Cada cifra lleva un código `[Fxx]` que enlaza con la lista de Referencias del final.
+
+**Diseño.** La propuesta visual se hizo en Figma Make y se pasó a código en la rama `diseno-figma`. Se corrigieron los contrastes de color para cumplir WCAG 2.2, se agregó un enlace "Saltar al contenido" y el texto alternativo de los elementos decorativos. Se revisó en 360, 768 y 1280 píxeles, sin desbordes horizontales.
+
+**Publicación.** Una acción de GitHub (`.github/workflows`) construye el sitio y lo publica en GitHub Pages cada vez que se integran cambios en la rama `main`. Las ramas de trabajo no se publican.
+
+**Límites conocidos.**
+
+- La página oficial de la carrera muestra una malla distinta a la de la resolución exenta. El sitio usa la resolución y lo avisa en la sección Plan de estudios.
+- La UTEM no publica el año de las vacantes ni del arancel. El sitio informa la fecha de consulta (8 de noviembre de 2026).
+- El único testimonio es de una integrante del equipo y está marcado como opinión personal.
 
 ## 9. Resultados de calidad
 
@@ -203,8 +219,10 @@ Se usó Claude (Anthropic) como apoyo. Ningún dato se tomó de la IA sin verifi
 | Claude      | Ordenar las respuestas en una planilla                | Ordenar el Excel para que sea fácil de leer                     | Se completó con las opciones del formulario que nadie marcó y se corrigió la muestra (no había opción de 3.° medio) al compararlo con el formulario real.                          |
 | Claude      | Redactar el Producto B y el Anexo B1                  | Perfil de usuario, tabla de preguntas y cuestionario como anexo | Se ajustó la descripción de la muestra y del instrumento al formulario real y se revisaron las cifras contra las respuestas.                                                       |
 | Claude | Buscar y evaluar fuentes y armar la matriz (Producto A) | Completar la matriz según lo que pide el profe y verificar los datos en la CNA, Mi Futuro y el SIES | La lista de fuentes inicial se corrigió (enlaces genéricos reemplazados por páginas específicas y una noticia reemplazada por el informe SIES). Cada dato se verificó abriendo la fuente. Una cifra de prensa que no estaba en el informe del SIES se descartó, y el "4 años" de acreditación de Mi Futuro se reemplazó por el dato vigente de la CNA. |
+| Claude | Pasar el diseño de Figma Make a código Astro y revisar calidad | Implementar el diseño elegido con los datos reales del sitio; revisar accesibilidad, desbordes y requisitos del profe | El equipo eligió el diseño en Figma Make. Se corrigieron contrastes, nombres accesibles y el solape del dibujo en 768 px. Los datos no vinieron de la IA: salen de `src/content/` y de las fuentes verificadas. |
+| Claude | Atajos técnicos: etiquetas Open Graph, favicon, imagen para redes y README | Completar los requisitos de SEO y documentación | La imagen para redes y el favicon se hicieron con texto propio del sitio, sin imágenes de terceros. |
 
-El código generado con ayuda de IA está documentado línea a línea en los comentarios del propio código.
+Los comentarios del código explican qué hace cada componente y de dónde vienen sus datos.
 
 ---
 

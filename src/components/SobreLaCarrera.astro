@@ -1,37 +1,84 @@
 ---
+// Sobre la carrera: datos generales (F01, F02), respuesta a "¿tengo que saber programar?"
+// y testimonio. El arreglo `testimonios` solo admite opiniones reales con autorización.
 import Cita from "./Cita.astro";
 import Etiqueta from "./Etiqueta.astro";
+import Eyebrow from "./Eyebrow.astro";
+
+// Solo testimonios reales, con autorización de quien los dice.
+// Para sumar uno, agrega un objeto con el texto y quién lo dijo.
+const testimonios = [
+  {
+    texto: [
+      "En la carrera de ingeniería informática me ha ayudado a hacer amigos.",
+      "He tenido una grata experiencia con los profesores y profesoras.",
+    ],
+    autor: "Opinión personal de una integrante del equipo.",
+  },
+];
 ---
-<section id="sobre-la-carrera">
-  <h2>Sobre la carrera</h2>
-  <p>
-    La UTEM imparte Ingeniería en Informática con el código de carrera 21030
-    <Cita id="F02" />. La carrera dura 8 semestres, que son 4 años <Cita id="F01" />.
-  </p>
-  <h3>Carreras afines</h3>
-  <p>
-    Existen carreras afines que no son iguales a esta
-    <Etiqueta tipo="interpretacion" />
-  </p>
-  <ul>
-    <li>
-      La Universidad de Santiago de Chile (USACH) ofrece Ingeniería Civil en
-      Informática <Cita id="F10" />.
-    </li>
-    <li>
-      La propia UTEM ofrece Ingeniería Civil en Computación, mención
-      Informática, como ruta de prosecución de estudios <Cita id="F11" />.
-    </li>
-  </ul>
-  <p>
-    Antes de comparar, revisa la duración, la malla y el perfil de cada carrera
-    en su página oficial <Etiqueta tipo="interpretacion" />
-  </p>
-  <h3>Vida de estudiante</h3>
-  <blockquote>
-    <Etiqueta tipo="testimonio" />
-    <p>En la carrera de ingeniería informática me ha ayudado a hacer amigos.</p>
-    <p>He tenido una grata experiencia con los profesores y profesoras.</p>
-    <footer>Opinión personal de una integrante del equipo.</footer>
-  </blockquote>
+<section id="sobre-la-carrera" class="section about">
+  <div class="section-heading split-heading">
+    <div>
+      <Eyebrow>Sobre la carrera</Eyebrow>
+      <h2>Mucho más que<br />aprender a programar.</h2>
+    </div>
+    <p>
+      La UTEM imparte Ingeniería en Informática en jornada diurna, durante 8
+      semestres (4 años) <Cita id="F01" />. Al terminar obtienes el título de
+      Ingeniera o Ingeniero en Informática y el grado de Licenciada o Licenciado
+      en Informática <Cita id="F01" />.
+    </p>
+  </div>
+  <div class="about-grid">
+    <div class="big-copy">
+      <dl class="fact-row">
+        <div><dt>Código DEMRE (Departamento de Evaluación, Medición y Registro Educacional)</dt><dd>21030 <Cita id="F01" /></dd></div>
+        <div><dt>Duración</dt><dd>8 semestres <Cita id="F01" /></dd></div>
+        <div><dt>Créditos transferibles (SCT)</dt><dd>240 <Cita id="F02" /></dd></div>
+        <div><dt>Vacantes (consulta nov. 2026)</dt><dd>150 <Cita id="F01" /></dd></div>
+      </dl>
+      <p>
+        La malla combina tres tipos de ramos: base matemática y científica,
+        informática, y proyecto o profesión, que termina con el trabajo de título
+        y la práctica profesional <Cita id="F02" />.
+      </p>
+    </div>
+    <aside class="note-card" aria-labelledby="pregunta-programar">
+      <Etiqueta tipo="dato" naranjo />
+      <h3 id="pregunta-programar">Una duda frecuente</h3>
+      <p>“¿Tengo que saber programar antes de entrar?”</p>
+      <strong>No.</strong>
+      <p>
+        La admisión pondera tus notas y las pruebas de la Prueba de Acceso a la
+        Educación Superior (PAES). Ninguna de ellas mide programación <Cita id="F01" />.
+      </p>
+    </aside>
+    <div>
+      {testimonios.map((t) => (
+        <blockquote class="quote-card">
+          <Etiqueta tipo="testimonio" />
+          {t.texto.map((linea) => <p>“{linea}”</p>)}
+          <footer>— {t.autor}</footer>
+        </blockquote>
+      ))}
+    </div>
+  </div>
+  <div class="interpretation related">
+    <Etiqueta tipo="interpretacion" naranjo />
+    <div>
+      <p>Hay carreras afines, pero no son iguales a esta:</p>
+      <ul>
+        <li>
+          La Universidad de Santiago de Chile (USACH) ofrece Ingeniería Civil en
+          Informática <Cita id="F10" />.
+        </li>
+        <li>
+          La propia UTEM ofrece Ingeniería Civil en Computación, mención
+          Informática, como ruta de prosecución de estudios <Cita id="F11" />.
+        </li>
+      </ul>
+      <p>Antes de comparar, revisa la duración, la malla y el perfil de cada una en su página oficial.</p>
+    </div>
+  </div>
 </section>

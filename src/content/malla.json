@@ -4,6 +4,7 @@
     "orden": 1,
     "semestre": 1,
     "asignatura": "Habilidades de Razonamiento Lógico",
+    "area": "base",
     "creditos": 4
   },
   {
@@ -11,6 +12,7 @@
     "orden": 2,
     "semestre": 1,
     "asignatura": "Taller de Matemáticas",
+    "area": "base",
     "creditos": 6
   },
   {
@@ -18,6 +20,7 @@
     "orden": 3,
     "semestre": 1,
     "asignatura": "Taller de Ciencia y Tecnología",
+    "area": "base",
     "creditos": 4
   },
   {
@@ -25,6 +28,7 @@
     "orden": 4,
     "semestre": 1,
     "asignatura": "Introducción a la Ingeniería Informática",
+    "area": "informatica",
     "creditos": 6
   },
   {
@@ -32,6 +36,7 @@
     "orden": 5,
     "semestre": 1,
     "asignatura": "Design Thinking",
+    "area": "proyecto",
     "creditos": 4
   },
   {
@@ -39,6 +44,7 @@
     "orden": 6,
     "semestre": 1,
     "asignatura": "Algoritmos y Programación",
+    "area": "informatica",
     "creditos": 6
   },
   {
@@ -46,6 +52,7 @@
     "orden": 7,
     "semestre": 2,
     "asignatura": "Habilidades de Trabajo Académico",
+    "area": "base",
     "creditos": 4
   },
   {
@@ -53,6 +60,7 @@
     "orden": 8,
     "semestre": 2,
     "asignatura": "Cálculo Diferencial",
+    "area": "base",
     "creditos": 6
   },
   {
@@ -60,6 +68,7 @@
     "orden": 9,
     "semestre": 2,
     "asignatura": "Álgebra Clásica",
+    "area": "base",
     "creditos": 6
   },
   {
@@ -67,6 +76,7 @@
     "orden": 10,
     "semestre": 2,
     "asignatura": "Mecánica Clásica",
+    "area": "base",
     "creditos": 6
   },
   {
@@ -74,6 +84,7 @@
     "orden": 11,
     "semestre": 2,
     "asignatura": "Estructura de Datos",
+    "area": "informatica",
     "creditos": 6
   },
   {
@@ -81,6 +92,7 @@
     "orden": 12,
     "semestre": 2,
     "asignatura": "Electivo Formación General",
+    "area": "base",
     "creditos": 2
   },
   {
@@ -88,6 +100,7 @@
     "orden": 13,
     "semestre": 3,
     "asignatura": "Cálculo Integral",
+    "area": "base",
     "creditos": 6
   },
   {
@@ -95,6 +108,7 @@
     "orden": 14,
     "semestre": 3,
     "asignatura": "Álgebra Superior",
+    "area": "base",
     "creditos": 6
   },
   {
@@ -102,6 +116,7 @@
     "orden": 15,
     "semestre": 3,
     "asignatura": "Electromagnetismo",
+    "area": "base",
     "creditos": 6
   },
   {
@@ -109,6 +124,7 @@
     "orden": 16,
     "semestre": 3,
     "asignatura": "Base de Datos",
+    "area": "informatica",
     "creditos": 6
   },
   {
@@ -116,6 +132,7 @@
     "orden": 17,
     "semestre": 3,
     "asignatura": "Lenguaje de Programación",
+    "area": "informatica",
     "creditos": 6
   },
   {
@@ -123,6 +140,7 @@
     "orden": 18,
     "semestre": 4,
     "asignatura": "Estadística y Probabilidades",
+    "area": "base",
     "creditos": 4
   },
   {
@@ -130,6 +148,7 @@
     "orden": 19,
     "semestre": 4,
     "asignatura": "Ingeniería Ambiental",
+    "area": "base",
     "creditos": 4
   },
   {
@@ -137,6 +156,7 @@
     "orden": 20,
     "semestre": 4,
     "asignatura": "Taller de Principios de Sustentabilidad",
+    "area": "base",
     "creditos": 4
   },
   {
@@ -144,6 +164,7 @@
     "orden": 21,
     "semestre": 4,
     "asignatura": "Grafos y Lenguajes Formales",
+    "area": "informatica",
     "creditos": 6
   },
   {
@@ -151,6 +172,7 @@
     "orden": 22,
     "semestre": 4,
     "asignatura": "Sistema de Información",
+    "area": "informatica",
     "creditos": 6
   },
   {
@@ -158,6 +180,7 @@
     "orden": 23,
     "semestre": 4,
     "asignatura": "Arquitectura de Computadores",
+    "area": "informatica",
     "creditos": 6
   },
   {
@@ -165,6 +188,7 @@
     "orden": 24,
     "semestre": 5,
     "asignatura": "Circuitos Eléctricos",
+    "area": "base",
     "creditos": 4
   },
   {
@@ -172,6 +196,7 @@
     "orden": 25,
     "semestre": 5,
     "asignatura": "Principios de Economía",
+    "area": "base",
     "creditos": 4
   },
   {
@@ -179,6 +204,7 @@
     "orden": 26,
     "semestre": 5,
     "asignatura": "Inglés I",
+    "area": "base",
     "creditos": 4
   },
   {
@@ -186,6 +212,7 @@
     "orden": 27,
     "semestre": 5,
     "asignatura": "Desarrollo Ágil",
+    "area": "informatica",
     "creditos": 6
   },
   {
@@ -193,6 +220,7 @@
     "orden": 28,
     "semestre": 5,
     "asignatura": "Sistemas Operativos",
+    "area": "informatica",
     "creditos": 6
   },
   {
@@ -200,6 +228,7 @@
     "orden": 29,
     "semestre": 5,
     "asignatura": "Análisis de Algoritmos",
+    "area": "informatica",
     "creditos": 6
   },
   {
@@ -207,6 +236,7 @@
     "orden": 30,
     "semestre": 6,
     "asignatura": "Inglés II",
+    "area": "base",
     "creditos": 4
   },
   {
@@ -214,6 +244,7 @@
     "orden": 31,
     "semestre": 6,
     "asignatura": "Fundamentos de Data Science",
+    "area": "informatica",
     "creditos": 6
   },
   {
@@ -221,6 +252,7 @@
     "orden": 32,
     "semestre": 6,
     "asignatura": "Ciberseguridad",
+    "area": "informatica",
     "creditos": 4
   },
   {
@@ -228,6 +260,7 @@
     "orden": 33,
     "semestre": 6,
     "asignatura": "Evaluación de Proyectos Informáticos",
+    "area": "proyecto",
     "creditos": 4
   },
   {
@@ -235,6 +268,7 @@
     "orden": 34,
     "semestre": 6,
     "asignatura": "Ingeniería de Software",
+    "area": "informatica",
     "creditos": 6
   },
   {
@@ -242,6 +276,7 @@
     "orden": 35,
     "semestre": 6,
     "asignatura": "Redes y Comunicación de Datos",
+    "area": "informatica",
     "creditos": 6
   },
   {
@@ -249,6 +284,7 @@
     "orden": 36,
     "semestre": 7,
     "asignatura": "Gestión de Proyectos Informáticos",
+    "area": "proyecto",
     "creditos": 6
   },
   {
@@ -256,6 +292,7 @@
     "orden": 37,
     "semestre": 7,
     "asignatura": "Computación en la Nube",
+    "area": "informatica",
     "creditos": 6
   },
   {
@@ -263,6 +300,7 @@
     "orden": 38,
     "semestre": 7,
     "asignatura": "Computación Móvil y Web",
+    "area": "informatica",
     "creditos": 6
   },
   {
@@ -270,6 +308,7 @@
     "orden": 39,
     "semestre": 7,
     "asignatura": "Electivo de Formación Especializada I",
+    "area": "informatica",
     "creditos": 4
   },
   {
@@ -277,6 +316,7 @@
     "orden": 40,
     "semestre": 7,
     "asignatura": "Electivo de Formación Especializada II",
+    "area": "informatica",
     "creditos": 4
   },
   {
@@ -284,6 +324,7 @@
     "orden": 41,
     "semestre": 7,
     "asignatura": "Trabajo de Título I",
+    "area": "proyecto",
     "creditos": 4
   },
   {
@@ -291,6 +332,7 @@
     "orden": 42,
     "semestre": 8,
     "asignatura": "Taller de Innovación y Emprendimiento",
+    "area": "proyecto",
     "creditos": 4
   },
   {
@@ -298,6 +340,7 @@
     "orden": 43,
     "semestre": 8,
     "asignatura": "Trabajo de Título II",
+    "area": "proyecto",
     "creditos": 4
   },
   {
@@ -305,6 +348,7 @@
     "orden": 44,
     "semestre": 8,
     "asignatura": "Práctica Profesional",
+    "area": "proyecto",
     "creditos": 22
   }
 ]

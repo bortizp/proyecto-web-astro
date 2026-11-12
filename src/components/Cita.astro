@@ -1,7 +1,8 @@
 ---
+// Cita [Fxx]: enlace numerado hacia la lista de Referencias (ancla #fxx).
 interface Props {
   id: string;
 }
 const { id } = Astro.props;
 ---
-<sup class="cita"><a href={`#${id.toLowerCase()}`} aria-label={`Fuente ${id}`}>[{id}]</a></sup>
+<a class="citation" href={`#${id.toLowerCase()}`} aria-label={`Fuente ${id}`}>[{id}]</a>
