@@ -1,6 +1,51 @@
 ---
+import Cita from "./Cita.astro";
+import Etiqueta from "./Etiqueta.astro";
+
+const ponderaciones = [
+  ["NEM (Notas de Enseñanza Media)", "10 %"],
+  ["Ranking", "25 %"],
+  ["Competencia Lectora", "20 %"],
+  ["Matemática 1", "30 %"],
+  ["Matemática 2", "5 %"],
+  ["Ciencias", "10 %"],
+  ["Historia", "10 %"],
+];
 ---
 <section id="admision">
   <h2>Admisión</h2>
-  <p>Texto de prueba</p>
+  <p>
+    La UTEM admite a sus estudiantes de pregrado por la Prueba de Acceso a la
+    Educación Superior (PAES) <Cita id="F06" />.
+  </p>
+  <p>
+    Según la UTEM, en la página consultada el 8 de noviembre de 2026 se
+    informan 150 vacantes <Cita id="F01" />. La matrícula cuesta $90.000 y el
+    arancel anual es $4.763.300 <Cita id="F01" />.
+  </p>
+  <p>
+    El promedio mínimo entre Competencia Lectora y Matemática 1 es 458 puntos
+    <Cita id="F01" />.
+  </p>
+  <h3>Ponderaciones publicadas por la UTEM</h3>
+  <table>
+    <caption>Ponderaciones según la UTEM <Cita id="F01" /></caption>
+    <thead>
+      <tr><th scope="col">Prueba o factor</th><th scope="col">Ponderación</th></tr>
+    </thead>
+    <tbody>
+      {ponderaciones.map(([nombre, valor]) => (
+        <tr><th scope="row">{nombre}</th><td>{valor}</td></tr>
+      ))}
+    </tbody>
+  </table>
+  <p class="nota">
+    Estas ponderaciones suman 110 % y la página de la UTEM no explica por qué
+    <Etiqueta tipo="interpretacion" /> Confirma el detalle con la universidad.
+  </p>
+  <p>
+    Las fechas del proceso de admisión 2027 están en el calendario del DEMRE
+    (Departamento de Evaluación, Medición y Registro Educacional)
+    <Cita id="F07" />.
+  </p>
 </section>

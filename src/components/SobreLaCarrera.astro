@@ -1,6 +1,37 @@
 ---
+import Cita from "./Cita.astro";
+import Etiqueta from "./Etiqueta.astro";
 ---
 <section id="sobre-la-carrera">
   <h2>Sobre la carrera</h2>
-  <p>Texto de prueba</p>
+  <p>
+    La UTEM imparte Ingeniería en Informática con el código de carrera 21030
+    <Cita id="F02" />. La carrera dura 8 semestres, que son 4 años <Cita id="F01" />.
+  </p>
+  <h3>Carreras afines</h3>
+  <p>
+    Existen carreras afines que no son iguales a esta
+    <Etiqueta tipo="interpretacion" />
+  </p>
+  <ul>
+    <li>
+      La Universidad de Santiago de Chile (USACH) ofrece Ingeniería Civil en
+      Informática <Cita id="F10" />.
+    </li>
+    <li>
+      La propia UTEM ofrece Ingeniería Civil en Computación, mención
+      Informática, como ruta de prosecución de estudios <Cita id="F11" />.
+    </li>
+  </ul>
+  <p>
+    Antes de comparar, revisa la duración, la malla y el perfil de cada carrera
+    en su página oficial <Etiqueta tipo="interpretacion" />
+  </p>
+  <h3>Vida de estudiante</h3>
+  <blockquote>
+    <Etiqueta tipo="testimonio" />
+    <p>En la carrera de ingeniería informática me ha ayudado a hacer amigos.</p>
+    <p>He tenido una grata experiencia con los profesores y profesoras.</p>
+    <footer>Opinión personal de una integrante del equipo.</footer>
+  </blockquote>
 </section>
