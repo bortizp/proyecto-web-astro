@@ -2,7 +2,9 @@
 import { getCollection } from "astro:content";
 import Cita from "./Cita.astro";
 
-const asignaturas = await getCollection("malla");
+const asignaturas = (await getCollection("malla")).sort(
+  (a, b) => a.data.orden - b.data.orden,
+);
 const semestres = new Map<number, typeof asignaturas>();
 for (const a of asignaturas) {
   const lista = semestres.get(a.data.semestre) ?? [];

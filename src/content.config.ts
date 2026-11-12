@@ -18,6 +18,7 @@ const malla = defineCollection({
   loader: file("src/content/malla.json"),
   schema: z.object({
     semestre: z.number().int().min(1).max(12),
+    orden: z.number().int().positive(),
     asignatura: z.string(),
     creditos: z.number().optional(),
   }),
@@ -36,6 +37,7 @@ const campoLaboral = defineCollection({
 const faq = defineCollection({
   loader: file("src/content/faq.json"),
   schema: z.object({
+    orden: z.number().int().positive(),
     pregunta: z.string(),
     respuesta: z
       .array(

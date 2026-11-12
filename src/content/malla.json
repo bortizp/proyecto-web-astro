@@ -1,264 +1,308 @@
 [
   {
     "id": "s1-habilidades-de-razonamiento-logico",
+    "orden": 1,
     "semestre": 1,
     "asignatura": "Habilidades de Razonamiento Lógico",
     "creditos": 4
   },
   {
     "id": "s1-taller-de-matematicas",
+    "orden": 2,
     "semestre": 1,
     "asignatura": "Taller de Matemáticas",
     "creditos": 6
   },
   {
     "id": "s1-taller-de-ciencia-y-tecnologia",
+    "orden": 3,
     "semestre": 1,
     "asignatura": "Taller de Ciencia y Tecnología",
     "creditos": 4
   },
   {
     "id": "s1-introduccion-a-la-ingenieria-informatica",
+    "orden": 4,
     "semestre": 1,
     "asignatura": "Introducción a la Ingeniería Informática",
     "creditos": 6
   },
   {
     "id": "s1-design-thinking",
+    "orden": 5,
     "semestre": 1,
     "asignatura": "Design Thinking",
     "creditos": 4
   },
   {
     "id": "s1-algoritmos-y-programacion",
+    "orden": 6,
     "semestre": 1,
     "asignatura": "Algoritmos y Programación",
     "creditos": 6
   },
   {
     "id": "s2-habilidades-de-trabajo-academico",
+    "orden": 7,
     "semestre": 2,
     "asignatura": "Habilidades de Trabajo Académico",
     "creditos": 4
   },
   {
     "id": "s2-calculo-diferencial",
+    "orden": 8,
     "semestre": 2,
     "asignatura": "Cálculo Diferencial",
     "creditos": 6
   },
   {
     "id": "s2-algebra-clasica",
+    "orden": 9,
     "semestre": 2,
     "asignatura": "Álgebra Clásica",
     "creditos": 6
   },
   {
     "id": "s2-mecanica-clasica",
+    "orden": 10,
     "semestre": 2,
     "asignatura": "Mecánica Clásica",
     "creditos": 6
   },
   {
     "id": "s2-estructura-de-datos",
+    "orden": 11,
     "semestre": 2,
     "asignatura": "Estructura de Datos",
     "creditos": 6
   },
   {
     "id": "s2-electivo-formacion-general",
+    "orden": 12,
     "semestre": 2,
     "asignatura": "Electivo Formación General",
     "creditos": 2
   },
   {
     "id": "s3-calculo-integral",
+    "orden": 13,
     "semestre": 3,
     "asignatura": "Cálculo Integral",
     "creditos": 6
   },
   {
     "id": "s3-algebra-superior",
+    "orden": 14,
     "semestre": 3,
     "asignatura": "Álgebra Superior",
     "creditos": 6
   },
   {
     "id": "s3-electromagnetismo",
+    "orden": 15,
     "semestre": 3,
     "asignatura": "Electromagnetismo",
     "creditos": 6
   },
   {
     "id": "s3-base-de-datos",
+    "orden": 16,
     "semestre": 3,
     "asignatura": "Base de Datos",
     "creditos": 6
   },
   {
     "id": "s3-lenguaje-de-programacion",
+    "orden": 17,
     "semestre": 3,
     "asignatura": "Lenguaje de Programación",
     "creditos": 6
   },
   {
     "id": "s4-estadistica-y-probabilidades",
+    "orden": 18,
     "semestre": 4,
     "asignatura": "Estadística y Probabilidades",
     "creditos": 4
   },
   {
     "id": "s4-ingenieria-ambiental",
+    "orden": 19,
     "semestre": 4,
     "asignatura": "Ingeniería Ambiental",
     "creditos": 4
   },
   {
     "id": "s4-taller-de-principios-de-sustentabilidad",
+    "orden": 20,
     "semestre": 4,
     "asignatura": "Taller de Principios de Sustentabilidad",
     "creditos": 4
   },
   {
     "id": "s4-grafos-y-lenguajes-formales",
+    "orden": 21,
     "semestre": 4,
     "asignatura": "Grafos y Lenguajes Formales",
     "creditos": 6
   },
   {
     "id": "s4-sistema-de-informacion",
+    "orden": 22,
     "semestre": 4,
     "asignatura": "Sistema de Información",
     "creditos": 6
   },
   {
     "id": "s4-arquitectura-de-computadores",
+    "orden": 23,
     "semestre": 4,
     "asignatura": "Arquitectura de Computadores",
     "creditos": 6
   },
   {
     "id": "s5-circuitos-electricos",
+    "orden": 24,
     "semestre": 5,
     "asignatura": "Circuitos Eléctricos",
     "creditos": 4
   },
   {
     "id": "s5-principios-de-economia",
+    "orden": 25,
     "semestre": 5,
     "asignatura": "Principios de Economía",
     "creditos": 4
   },
   {
     "id": "s5-ingles-i",
+    "orden": 26,
     "semestre": 5,
     "asignatura": "Inglés I",
     "creditos": 4
   },
   {
     "id": "s5-desarrollo-agil",
+    "orden": 27,
     "semestre": 5,
     "asignatura": "Desarrollo Ágil",
     "creditos": 6
   },
   {
     "id": "s5-sistemas-operativos",
+    "orden": 28,
     "semestre": 5,
     "asignatura": "Sistemas Operativos",
     "creditos": 6
   },
   {
     "id": "s5-analisis-de-algoritmos",
+    "orden": 29,
     "semestre": 5,
     "asignatura": "Análisis de Algoritmos",
     "creditos": 6
   },
   {
     "id": "s6-ingles-ii",
+    "orden": 30,
     "semestre": 6,
     "asignatura": "Inglés II",
     "creditos": 4
   },
   {
     "id": "s6-fundamentos-de-data-science",
+    "orden": 31,
     "semestre": 6,
     "asignatura": "Fundamentos de Data Science",
     "creditos": 6
   },
   {
     "id": "s6-ciberseguridad",
+    "orden": 32,
     "semestre": 6,
     "asignatura": "Ciberseguridad",
     "creditos": 4
   },
   {
     "id": "s6-evaluacion-de-proyectos-informaticos",
+    "orden": 33,
     "semestre": 6,
     "asignatura": "Evaluación de Proyectos Informáticos",
     "creditos": 4
   },
   {
     "id": "s6-ingenieria-de-software",
+    "orden": 34,
     "semestre": 6,
     "asignatura": "Ingeniería de Software",
     "creditos": 6
   },
   {
     "id": "s6-redes-y-comunicacion-de-datos",
+    "orden": 35,
     "semestre": 6,
     "asignatura": "Redes y Comunicación de Datos",
     "creditos": 6
   },
   {
     "id": "s7-gestion-de-proyectos-informaticos",
+    "orden": 36,
     "semestre": 7,
     "asignatura": "Gestión de Proyectos Informáticos",
     "creditos": 6
   },
   {
     "id": "s7-computacion-en-la-nube",
+    "orden": 37,
     "semestre": 7,
     "asignatura": "Computación en la Nube",
     "creditos": 6
   },
   {
     "id": "s7-computacion-movil-y-web",
+    "orden": 38,
     "semestre": 7,
     "asignatura": "Computación Móvil y Web",
     "creditos": 6
   },
   {
     "id": "s7-electivo-de-formacion-especializada-i",
+    "orden": 39,
     "semestre": 7,
     "asignatura": "Electivo de Formación Especializada I",
     "creditos": 4
   },
   {
     "id": "s7-electivo-de-formacion-especializada-ii",
+    "orden": 40,
     "semestre": 7,
     "asignatura": "Electivo de Formación Especializada II",
     "creditos": 4
   },
   {
     "id": "s7-trabajo-de-titulo-i",
+    "orden": 41,
     "semestre": 7,
     "asignatura": "Trabajo de Título I",
     "creditos": 4
   },
   {
     "id": "s8-taller-de-innovacion-y-emprendimiento",
+    "orden": 42,
     "semestre": 8,
     "asignatura": "Taller de Innovación y Emprendimiento",
     "creditos": 4
   },
   {
     "id": "s8-trabajo-de-titulo-ii",
+    "orden": 43,
     "semestre": 8,
     "asignatura": "Trabajo de Título II",
     "creditos": 4
   },
   {
     "id": "s8-practica-profesional",
+    "orden": 44,
     "semestre": 8,
     "asignatura": "Práctica Profesional",
     "creditos": 22

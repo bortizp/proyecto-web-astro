@@ -3,7 +3,9 @@ import { getCollection } from "astro:content";
 import Cita from "./Cita.astro";
 import Etiqueta from "./Etiqueta.astro";
 
-const preguntas = await getCollection("faq");
+const preguntas = (await getCollection("faq")).sort(
+  (a, b) => a.data.orden - b.data.orden,
+);
 ---
 <section id="preguntas-frecuentes">
   <h2>Preguntas frecuentes</h2>

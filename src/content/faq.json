@@ -1,6 +1,7 @@
 [
   {
     "id": "hay-trabajo",
+    "orden": 1,
     "pregunta": "¿Hay trabajo al titularse?",
     "respuesta": [
       {
@@ -18,6 +19,7 @@
   },
   {
     "id": "cuanta-matematica",
+    "orden": 2,
     "pregunta": "¿Cuánta matemática hay?",
     "respuesta": [
       {
@@ -42,6 +44,7 @@
   },
   {
     "id": "cuantos-anios",
+    "orden": 3,
     "pregunta": "¿Cuántos años dura la carrera?",
     "respuesta": [
       {
@@ -62,6 +65,7 @@
   },
   {
     "id": "cuanto-se-gana",
+    "orden": 4,
     "pregunta": "¿Cuánto se gana?",
     "respuesta": [
       {
@@ -79,6 +83,7 @@
   },
   {
     "id": "puntajes-requisitos",
+    "orden": 5,
     "pregunta": "¿Qué puntajes y requisitos piden?",
     "respuesta": [
       {
@@ -106,6 +111,7 @@
   },
   {
     "id": "inteligencia-artificial",
+    "orden": 6,
     "pregunta": "¿La inteligencia artificial deja sin trabajo a los informáticos?",
     "respuesta": [
       {
