@@ -168,7 +168,7 @@ Cada afirmación se marcó según su tipo: (dato) para información instituciona
 | V1 | Encontrar cuántos años dura | 20 s |Lo busque en el menú | Ninguna|
 (igual para V2 y V3)
 
-3 personas: [perfiles sin nombres, por ejemplo "2 de 4.° medio y 1 egresada"].
+3 personas: Estudiante 4to medio, Estudiante 3ro medio, familiar.
 
 | Código | Tarea       | Resultado   | Hallazgo    | Corrección aplicada |
 | ------ | ----------- | ----------- | ----------- | ------------------- |
