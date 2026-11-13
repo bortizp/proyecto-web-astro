@@ -160,7 +160,15 @@ Cada afirmación se marcó según su tipo: (dato) para información instituciona
 
 ## 7. Fase E – Validación con usuarios (Producto E)
 
-> **PENDIENTE.** Aquí va el registro de la prueba con al menos 3 personas del público objetivo: tareas pedidas (por ejemplo, encontrar el plan de estudios, la acreditación y las vías de admisión), hallazgos, correcciones aplicadas y evidencias.
+| Código | Tarea | Resultado | Hallazgo | Corrección aplicada |
+| ------ | ----- | --------- | -------- | ------------------- |
+| V1 | Encontrar el plan de estudios | Sí, en unos 20 s | Lo buscó en el menú | Ninguna |
+| V1 | Encontrar si la carrera está acreditada | ... | ... | ... |
+| V1 | Encontrar cómo se postula | ... | ... | ... |
+| V1 | Encontrar cuántos años dura | ... | ... | ... |
+(igual para V2 y V3)
+
+3 personas: [perfiles sin nombres, por ejemplo "2 de 4.° medio y 1 egresada"].
 
 | Código | Tarea       | Resultado   | Hallazgo    | Corrección aplicada |
 | ------ | ----------- | ----------- | ----------- | ------------------- |
