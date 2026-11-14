@@ -211,8 +211,21 @@ Esta sección explica, con palabras simples, por qué el sitio está construido 
 
 Todas las mediciones se hicieron sobre el sitio publicado: https://bortizp.github.io/proyecto-web-astro/
 
-| Medición               | Herramienta       | Meta               | Resultado                                              |
-| ---------------------- | ----------------- | ------------------ | ------------------------------------------------------ |
+| Medición               | Herramienta           | Meta               | Resultado                                                        |
+| ---------------------- | --------------------- | ------------------ | ---------------------------------------------------------------- |
+| Rendimiento            | pagespeed.web.dev     | 90 o más           | 100 en móvil (12 nov 2026) y 100 en ordenador (14 nov 2026)      |
+| Accesibilidad          | pagespeed.web.dev     | 90 o más           | 100 en móvil (12 nov 2026) y 100 en ordenador (14 nov 2026)      |
+| Buenas prácticas       | pagespeed.web.dev     | 90 o más           | 100 en móvil (12 nov 2026) y 100 en ordenador (14 nov 2026)      |
+| SEO                    | pagespeed.web.dev     | 90 o más           | 100 en móvil (12 nov 2026) y 100 en ordenador (14 nov 2026)      |
+| Accesibilidad WCAG 2.2 | compliascan.com       | 90/100 o más       | 100/100, sin avisos (14 nov 2026)                                |
+| Diseño responsivo      | Revisión manual y axe | 360, 768 y 1280 px | Sin desborde horizontal y sin errores de axe en los tres anchos  |
+
+**Observaciones.**
+
+- La primera medición de CompliaScan (12 nov 2026) dio 94/100, con 2 avisos moderados: texto de 11 px y objetivos táctiles menores de 24×24 px. Se corrigieron (texto de 12 px o más y objetivos de al menos 24×24 px) y la medición del 14 nov 2026 dio 100/100.
+- Las mediciones de PageSpeed en móvil son anteriores a esas correcciones. No se repitieron, pero las correcciones solo afectaron tamaños de texto y de enlaces.
+
+---------------------- | ----------------- | ------------------ | ------------------------------------------------------ |
 | Rendimiento            | pagespeed.web.dev | 90 o más           | 100 en móvil (12 nov 2026)                             |
 | Accesibilidad          | pagespeed.web.dev | 90 o más           | 100 en móvil (12 nov 2026)                             |
 | Buenas prácticas       | pagespeed.web.dev | 90 o más           | 100 en móvil (12 nov 2026)                             |
