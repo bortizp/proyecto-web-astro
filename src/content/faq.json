@@ -146,44 +146,8 @@
     ]
   },
   {
-    "id": "gratuidad",
-    "orden": 8,
-    "pregunta": "¿La Gratuidad cubre la matrícula?",
-    "respuesta": [
-      {
-        "texto": "Según la UTEM, si cuentas con Gratuidad, el beneficio cubre la matrícula de $90.000.",
-        "tipo": "dato",
-        "fuentes": [
-          "F01"
-        ]
-      },
-      {
-        "texto": "Tener Gratuidad depende de tu situación socioeconómica y de los requisitos vigentes de cada año.",
-        "tipo": "interpretacion"
-      }
-    ]
-  },
-  {
-    "id": "computador",
-    "orden": 9,
-    "pregunta": "¿Necesito un computador muy potente?",
-    "respuesta": [
-      {
-        "texto": "La página de la carrera no publica requisitos de computador ni de equipo.",
-        "tipo": "dato",
-        "fuentes": [
-          "F01"
-        ]
-      },
-      {
-        "texto": "No tenemos un dato verificado sobre qué equipo conviene. Antes de comprar, pregunta en la carrera qué programas vas a usar.",
-        "tipo": "interpretacion"
-      }
-    ]
-  },
-  {
     "id": "inteligencia-artificial",
-    "orden": 10,
+    "orden": 8,
     "pregunta": "¿La inteligencia artificial deja sin trabajo a los informáticos?",
     "respuesta": [
       {

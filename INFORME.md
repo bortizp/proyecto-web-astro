@@ -8,11 +8,11 @@
 
 ## Integrantes
 
-| Integrante         | Rol en el proyecto                    |
-| ------------------ | ------------------------------------- |
-| Bastian Ortiz      | Fuentes e investigación institucional |
-| Carolaine Palacios | Audiencia, redacción y validación     |
-| Marcos Fuentes     | Técnico y despliegue                  |
+| Integrante         | Rol en el proyecto                                                                                                                       |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Bastian Ortiz      | Rol 3, técnico y despliegue: implementación en Astro, calidad y publicación. También armó la matriz de fuentes y el análisis de audiencia (Productos A y B). |
+| Carolaine Palacios | Rol 2, audiencia, redacción y validación: mapa de contenidos, wireframes, textos por sección y prueba con usuarios.                      |
+| Marcos Fuentes     | Rol 1, fuentes e investigación institucional: fuentes por sección (`docs/fuentes_por_seccion.md`).                                       |
 
 ---
 
@@ -112,7 +112,7 @@ Es una síntesis de las respuestas, no una persona real. Cada dato indica cuánt
 | 5   | ¿Qué puntajes y requisitos piden? | 3 de 6   | Admisión                                                                | DEMRE y admisión de la UTEM      |
 | 6   | ¿Qué se estudia?                  | 2 de 6   | Plan de estudios                                                        | Malla o decreto oficial          |
 | 7   | ¿Qué se hace en el día a día?     | 2 de 6   | Perfil de egreso                                                        | Perfil de egreso oficial         |
-| 8   | ¿Cómo es la vida de estudiante?   | 2 de 6   | Sobre la carrera (testimonio del equipo, marcado como opinión personal) | Experiencia del equipo           |
+| 8   | ¿Cómo es la vida de estudiante?   | 2 de 6   | Sobre la carrera (sin testimonio: no hay autorización escrita) | Experiencia del equipo           |
 
 Opciones que nadie marcó (0 de 6): "Costo y gratuidad" y "Si la carrera está acreditada". La sección de Respaldo institucional se incluye igual porque es obligatoria.
 
@@ -137,7 +137,7 @@ Este es el orden de secciones de la página publicada. Sigue la secuencia de pre
 | Orden | Sección | Por qué va en este lugar | Fuentes (IDs) |
 | ----- | ------- | ------------------------ | ------------- |
 | 1 | Portada | Las personas conocen la carrera "a medias" (3,0 de 5 en promedio). La portada la presenta en pocas líneas y lleva a lo más buscado. | F01, F02 |
-| 2 | Sobre la carrera | Responde la primera pregunta del encargo: qué es y en qué se diferencia de carreras afines. 3 de 6 personas preguntaron cuántos años dura y 2 de 6, cómo es la vida de estudiante. | F01, F02, F10, F11 |
+| 2 | Sobre la carrera | Responde la primera pregunta del encargo: qué es y en qué se diferencia de carreras afines. 3 de 6 personas preguntaron cuántos años dura y 2 de 6, cómo es la vida de estudiante. Esta última duda no se responde con un testimonio, porque el equipo no tiene autorización escrita. | F01, F02, F10, F11 |
 | 3 | Perfil de egreso | Explica qué se podrá hacer antes de mostrar los ramos. 2 de 6 preguntaron qué se hace en el día a día. También responde a "solo se programa", con la que solo 1 de 6 estuvo de acuerdo. | F01, F02 |
 | 4 | Plan de estudios | 4 de 6 preguntaron cuánta matemática hay y 2 de 6, qué se estudia. Va después del perfil, para que los ramos se lean como una forma de llegar a esas capacidades. | F01, F02 |
 | 5 | Campo laboral | 4 de 6 preguntaron si hay trabajo al titularse y 3 de 6, cuánto se gana. Cierra la secuencia "qué aprendo, qué podré hacer". | F01, F02, F12, F13 |
@@ -161,7 +161,7 @@ Secciones obligatorias del sitio: Portada, Sobre la carrera, Perfil de egreso, P
 
  Los textos finales están en `docs/textos_por_seccion.md` y se cargan en `src/content/`, separados por sección. Para escribirlos se aplicaron cuatro criterios: oraciones de menos de 25 palabras, voz activa, siglas explicadas la primera vez y cada cifra con su año y una cita [Fxx] enlazada a Referencias. Además, no se usaron frases publicitarias sin poco originales, como "la mejor carrera". Estos criterios responden a la encuesta: 3 de 6 personas desconfían de la información desactualizada y 2 de 6, de las cifras sin fuente.
 
-Cada afirmación se marcó según su tipo: (dato) para información institucional con fuente, (interpretación del equipo) para lo que el equipo concluye a partir de los datos y (testimonio) para opiniones personales de estudiantes. El sitio muestra esa distinción con una etiqueta visual. Antes de redactar, el Rol 1 definió en `docs/fuentes_por_seccion.md` qué se puede afirmar y qué no en cada sección. Cuando no había un dato verificado, el texto lo dice: "No tenemos un dato verificado sobre esto". 
+Cada afirmación se marcó según su tipo: (dato) para información institucional con fuente, (interpretación del equipo) para lo que el equipo concluye a partir de los datos y (testimonio) para opiniones personales de estudiantes. La versión final no publica testimonios, porque no hay autorización escrita; el componente queda disponible para usarlo si se obtiene. El sitio muestra esa distinción con una etiqueta visual. Antes de redactar, el Rol 1 definió en `docs/fuentes_por_seccion.md` qué se puede afirmar y qué no en cada sección. Cuando no había un dato verificado, el texto lo dice: "No tenemos un dato verificado sobre esto". 
 
 ---
 
@@ -176,10 +176,6 @@ Cada afirmación se marcó según su tipo: (dato) para información instituciona
 (igual para V2 y V3)
 
 3 personas: Estudiante 4to medio, Estudiante 3ro medio, familiar.
-
-| Código | Tarea       | Resultado   | Hallazgo    | Corrección aplicada |
-| ------ | ----------- | ----------- | ----------- | ------------------- |
-| V1     | [completar] | [completar] | [completar] | [completar]         |
 
 ---
 
@@ -205,7 +201,7 @@ Esta sección explica, con palabras simples, por qué el sitio está construido 
 
 - La página oficial de la carrera muestra una malla distinta a la de la resolución exenta. El sitio usa la resolución y lo avisa en la sección Plan de estudios.
 - La UTEM no publica el año de las vacantes ni del arancel. El sitio informa la fecha de consulta (8 de noviembre de 2026).
-- El único testimonio es de una integrante del equipo y está marcado como opinión personal.
+- El sitio no publica testimonios. Se retiró el único que había, redactado por una integrante del equipo, porque no existe consentimiento escrito. El componente `Etiqueta` conserva el tipo "testimonio" para usarlo cuando haya autorización.
 
 ## 9. Resultados de calidad
 
@@ -224,27 +220,6 @@ Todas las mediciones se hicieron sobre el sitio publicado: https://bortizp.githu
 
 - La primera medición de CompliaScan (12 nov 2026) dio 94/100, con 2 avisos moderados: texto de 11 px y objetivos táctiles menores de 24×24 px. Se corrigieron (texto de 12 px o más y objetivos de al menos 24×24 px) y la medición del 14 nov 2026 dio 100/100.
 - Las mediciones de PageSpeed en móvil son anteriores a esas correcciones. No se repitieron, pero las correcciones solo afectaron tamaños de texto y de enlaces.
-
----------------------- | ----------------- | ------------------ | ------------------------------------------------------ |
-| Rendimiento            | pagespeed.web.dev | 90 o más           | 100 en móvil (12 nov 2026)                             |
-| Accesibilidad          | pagespeed.web.dev | 90 o más           | 100 en móvil (12 nov 2026)                             |
-| Buenas prácticas       | pagespeed.web.dev | 90 o más           | 100 en móvil (12 nov 2026)                             |
-| SEO                    | pagespeed.web.dev | 90 o más           | 100 en móvil (12 nov 2026)                             |
-| Accesibilidad WCAG 2.2 | compliascan.com   | 90/100 o más       | 94/100 (12 nov 2026)                                   |
-| Diseño responsivo      | Revisión manual y axe | 360, 768 y 1280 px | Sin desborde horizontal y sin errores de axe en los tres anchos |
-
-**Observaciones.**
-
-- CompliaScan marcó 2 avisos moderados: texto de 11 px y objetivos táctiles menores de 24×24 px. Se corrigieron después de esa medición en la rama `ajustes-finales` (texto de 12 px o más y objetivos de al menos 24×24 px).
-- La medición de PageSpeed en la pestaña Ordenador y una nueva medición de CompliaScan después de esas correcciones deben registrarse aquí cuando se hagan.
-
----------------------- | ----------------- | ------------------ | ----------- |
-| Rendimiento            | pagespeed.web.dev | 90 o más           | [completar] |
-| Accesibilidad          | pagespeed.web.dev | 90 o más           | [completar] |
-| Buenas prácticas       | pagespeed.web.dev | 90 o más           | [completar] |
-| SEO                    | pagespeed.web.dev | 90 o más           | [completar] |
-| Accesibilidad WCAG 2.2 | compliascan.com   | 90/100 o más       | [completar] |
-| Diseño responsivo      | Revisión manual   | 360, 768 y 1280 px | [completar] |
 
 ---
 

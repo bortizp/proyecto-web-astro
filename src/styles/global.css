@@ -387,7 +387,7 @@ a {
 }
 .about-grid {
   display: grid;
-  grid-template-columns: 1.5fr 0.75fr 0.75fr;
+  grid-template-columns: 1.5fr 1fr;
   gap: 24px;
   align-items: start;
 }
@@ -1137,7 +1137,7 @@ details[open] summary i::after {
     gap: 24px;
   }
   .about-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   .big-copy {
     grid-column: 1 / -1;
