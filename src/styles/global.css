@@ -95,7 +95,7 @@ a {
   flex: 0 0 auto;
 }
 .wordmark small {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0;
 }
@@ -247,7 +247,7 @@ a {
   padding: 0 15px;
   background: var(--cream);
   color: var(--ink);
-  font: 400 11px var(--mono);
+  font: 400 12px var(--mono);
 }
 .window-bar i {
   width: 9px;
@@ -315,7 +315,13 @@ a {
 
 /* ---------- Citas y etiquetas ---------- */
 .citation {
-  font: 500 0.75em var(--mono);
+  /* Objetivo táctil mínimo de 24×24 px (WCAG 2.2, criterio 2.5.8) y texto de 12 px o más. */
+  display: inline-block;
+  min-width: 24px;
+  min-height: 24px;
+  line-height: 24px;
+  text-align: center;
+  font: 500 max(12px, 0.75em) / 24px var(--mono);
   color: var(--blue);
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -325,7 +331,7 @@ a {
   display: inline-block;
   padding: 5px 9px;
   border: 1px solid currentColor;
-  font: 500 11px var(--mono);
+  font: 500 12px var(--mono);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   vertical-align: middle;
@@ -336,7 +342,7 @@ a {
 .tag-inline {
   margin-right: 8px;
   padding: 2px 7px;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 /* ---------- Secciones ---------- */
@@ -411,7 +417,7 @@ a {
   border-right: 0;
 }
 .fact-row dt {
-  font: 500 11px var(--mono);
+  font: 500 12px var(--mono);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--muted);
@@ -851,7 +857,7 @@ a {
   border-right: 0;
 }
 .key-figures dt {
-  font: 500 11px var(--mono);
+  font: 500 12px var(--mono);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--muted);
@@ -1451,4 +1457,23 @@ details[open] summary i::after {
 }
 .hero-degree + .hero-actions {
   margin-top: 28px;
+}
+
+/* ---------- Objetivos táctiles de al menos 24×24 px (WCAG 2.2, 2.5.8) ---------- */
+.topbar nav a,
+.text-link,
+.site-footer > a {
+  display: inline-block;
+  min-width: 24px;
+  min-height: 24px;
+  line-height: 24px;
+}
+.reference-list a {
+  min-height: 24px;
+  line-height: 24px;
+}
+.glossary {
+  margin: 12px 0 0;
+  font: 500 12px/1.5 var(--mono);
+  color: var(--muted);
 }

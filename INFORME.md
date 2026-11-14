@@ -202,10 +202,23 @@ Esta sección explica, con palabras simples, por qué el sitio está construido 
 
 ## 9. Resultados de calidad
 
-> **PENDIENTE.** Completar con los resultados medidos.
+Todas las mediciones se hicieron sobre el sitio publicado: https://bortizp.github.io/proyecto-web-astro/
 
-| Medición               | Herramienta       | Meta               | Resultado   |
-| ---------------------- | ----------------- | ------------------ | ----------- |
+| Medición               | Herramienta       | Meta               | Resultado                                              |
+| ---------------------- | ----------------- | ------------------ | ------------------------------------------------------ |
+| Rendimiento            | pagespeed.web.dev | 90 o más           | 100 en móvil (12 nov 2026)                             |
+| Accesibilidad          | pagespeed.web.dev | 90 o más           | 100 en móvil (12 nov 2026)                             |
+| Buenas prácticas       | pagespeed.web.dev | 90 o más           | 100 en móvil (12 nov 2026)                             |
+| SEO                    | pagespeed.web.dev | 90 o más           | 100 en móvil (12 nov 2026)                             |
+| Accesibilidad WCAG 2.2 | compliascan.com   | 90/100 o más       | 94/100 (12 nov 2026)                                   |
+| Diseño responsivo      | Revisión manual y axe | 360, 768 y 1280 px | Sin desborde horizontal y sin errores de axe en los tres anchos |
+
+**Observaciones.**
+
+- CompliaScan marcó 2 avisos moderados: texto de 11 px y objetivos táctiles menores de 24×24 px. Se corrigieron después de esa medición en la rama `ajustes-finales` (texto de 12 px o más y objetivos de al menos 24×24 px).
+- La medición de PageSpeed en la pestaña Ordenador y una nueva medición de CompliaScan después de esas correcciones deben registrarse aquí cuando se hagan.
+
+---------------------- | ----------------- | ------------------ | ----------- |
 | Rendimiento            | pagespeed.web.dev | 90 o más           | [completar] |
 | Accesibilidad          | pagespeed.web.dev | 90 o más           | [completar] |
 | Buenas prácticas       | pagespeed.web.dev | 90 o más           | [completar] |
