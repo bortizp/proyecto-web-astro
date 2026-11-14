@@ -1,28 +1,38 @@
 ---
 // Portada: titular, título/grado/jornada de la carrera y tres cifras clave con su fuente.
 // Los textos son fijos; las cifras llevan <Cita> que enlaza a Referencias.
+// Cita [Fxx] que enlaza cada cifra con la lista de Referencias.
 import Cita from "./Cita.astro";
 ---
+{/* Portada: es lo primero que se ve; ancla "portada". */}
 <section id="portada" class="hero">
+  {/* Columna de texto de la portada. */}
   <div class="hero-copy">
+    {/* Línea superior: aclara que es una guía no oficial y su edición. */}
     <p class="kicker">Guía no oficial · Santiago de Chile · edición 2026</p>
+    {/* Título principal de la página (el único h1). */}
     <h1>Informática,<br /><em>sin venderte humo.</em></h1>
+    {/* Bajada: qué es el sitio y para quién. */}
     <p class="hero-lead">
       Una guía hecha por estudiantes de Ingeniería en Informática de la UTEM
       para entender qué se estudia, cuánto dura y qué viene después. Con datos
       públicos, su fuente y las dudas que nosotros también tuvimos.
     </p>
+    {/* Nombre de la universidad, título, grado y jornada, con su fuente (F01). */}
     <p class="hero-degree">
-      Universidad Tecnológica Metropolitana (UTEM) · Título de Ingeniera o
-      Ingeniero en Informática y grado de Licenciada o Licenciado en
-      Informática · Jornada diurna <Cita id="F01" />
+      Universidad Tecnológica Metropolitana (UTEM). Título de Ingeniera o
+      Ingeniero en Informática. Grado de Licenciada o Licenciado en Informática.
+      Jornada diurna <Cita id="F01" />.
     </p>
+    {/* Llamados a la acción: ir a "Sobre la carrera" o a las referencias. */}
     <div class="hero-actions">
       <a class="button primary" href="#sobre-la-carrera">Partir por lo básico <span aria-hidden="true">↓</span></a>
       <a class="text-link" href="#referencias">Cómo verificamos los datos <span aria-hidden="true">↓</span></a>
     </div>
   </div>
+  {/* Ilustración decorativa; se oculta a lectores de pantalla (aria-hidden). */}
   <div class="hero-visual" aria-hidden="true">
+    {/* Ventana de código de adorno, solo decorativa. */}
     <div class="code-window">
       <div class="window-bar"><i></i><i></i><i></i><span>primer_semestre.ts</span></div>
       <pre><span class="muted">01</span> <b>const</b> duda = <span class="str">"¿seré capaz?"</span>;
@@ -33,6 +43,7 @@ import Cita from "./Cita.astro";
 <span class="muted">06</span>   volverAIntentar();
 <span class="muted">07</span> {"}"}</pre>
     </div>
+    {/* Dibujo de una línea de tiempo con cuatro hitos, decorativo. */}
     <svg viewBox="0 0 520 260">
       <path d="M28 184H130L168 124H267L306 184H486"></path>
       <circle cx="28" cy="184" r="9"></circle>
@@ -41,8 +52,10 @@ import Cita from "./Cita.astro";
       <circle cx="486" cy="184" r="9"></circle>
       <path class="accent-line" d="M95 229h111l32-45h98l31 45h75"></path>
     </svg>
+    {/* Frase manuscrita que acompaña la ilustración. */}
     <p class="scribble">No necesitas llegar sabiendo programar.</p>
   </div>
+  {/* Pie de la portada: tres cifras clave con su fuente y la fecha de revisión. */}
   <div class="hero-foot">
     <span>8 semestres <Cita id="F01" /></span>
     <span>240 créditos transferibles (SCT) <Cita id="F02" /></span>

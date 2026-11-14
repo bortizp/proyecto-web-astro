@@ -1,5 +1,7 @@
 ---
+// Layout común: <head>, menú y pie de página.
 import BaseLayout from "../layouts/BaseLayout.astro";
+// Un componente por cada sección obligatoria del encargo.
 import Hero from "../components/Hero.astro";
 import SobreLaCarrera from "../components/SobreLaCarrera.astro";
 import PerfilEgreso from "../components/PerfilEgreso.astro";
@@ -10,10 +12,12 @@ import Admision from "../components/Admision.astro";
 import Faq from "../components/Faq.astro";
 import Referencias from "../components/Referencias.astro";
 ---
+{/* La página única. Pasa su título y su descripción (únicos) al layout. */}
 <BaseLayout
   title="Ingeniería en Informática UTEM"
   description="Información verificada sobre la carrera de Ingeniería en Informática de la UTEM."
 >
+  {/* Las secciones se muestran en este orden, que es el orden del sitio. */}
   <Hero />
   <SobreLaCarrera />
   <PerfilEgreso />

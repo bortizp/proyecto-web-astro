@@ -1,34 +1,47 @@
 ---
 // Plan de estudios: lee la colección `malla` (src/content/malla.json), agrupa por semestre,
 // suma créditos SCT y muestra el área de cada asignatura con color y texto para lectores de pantalla.
+// Carga la colección de contenido `malla`, validada por su esquema.
 import { getCollection } from "astro:content";
 import Cita from "./Cita.astro";
 import Eyebrow from "./Eyebrow.astro";
 
+// Lee las asignaturas y las ordena por el campo `orden` (el de la resolución).
 const asignaturas = (await getCollection("malla")).sort(
   (a, b) => a.data.orden - b.data.orden,
 );
+// Mapa que agrupa las asignaturas por número de semestre.
 const semestres = new Map<number, typeof asignaturas>();
+// Recorre cada asignatura y la agrega a la lista de su semestre.
 for (const a of asignaturas) {
+  // Toma la lista del semestre, o una vacía si todavía no existe.
   const lista = semestres.get(a.data.semestre) ?? [];
+  // Agrega la asignatura a su semestre.
   lista.push(a);
+  // Guarda la lista actualizada en el mapa.
   semestres.set(a.data.semestre, lista);
 }
+// Convierte el mapa en una lista ordenada de semestre 1 a 8.
 const ordenados = [...semestres.entries()].sort((a, b) => a[0] - b[0]);
+// Suma los créditos SCT de todas las asignaturas (si una no tiene créditos, cuenta 0).
 const total = asignaturas.reduce((s, a) => s + (a.data.creditos ?? 0), 0);
+// Nombre legible de cada área; se usa en la leyenda y en el texto para lectores de pantalla.
 const areas = {
   base: "Base y ciencias",
   informatica: "Informática",
   proyecto: "Proyecto / profesión",
 };
 ---
+{/* Sección con ancla "plan-de-estudios", a la que apunta el menú superior. */}
 <section id="plan-de-estudios" class="section curriculum">
   <div class="section-heading split-heading">
     <div>
       <Eyebrow>Plan de estudios</Eyebrow>
       <h2>Ocho semestres,<br />capa por capa.</h2>
     </div>
+    {/* Leyenda de colores y resumen: cantidad de asignaturas y créditos totales. */}
     <div class="legend">
+      {/* Una entrada de leyenda por área, con su punto de color (decorativo). */}
       {Object.entries(areas).map(([clave, nombre]) => (
         <span><i class={`dot ${clave}`} aria-hidden="true"></i>{nombre}</span>
       ))}
@@ -39,21 +52,27 @@ const areas = {
       </p>
     </div>
   </div>
+  {/* Cuadrícula con una tarjeta por semestre. */}
   <div class="semester-grid">
+    {/* Crea la tarjeta de cada semestre. */}
     {ordenados.map(([semestre, lista]) => (
       <article class="semester-card">
         <header>
           <span>SEM {String(semestre).padStart(2, "0")}</span>
+          {/* Suma los créditos del semestre. */}
           <b>{lista.reduce((s, a) => s + (a.data.creditos ?? 0), 0)} SCT <Cita id="F02" /></b>
         </header>
         <h3>Semestre {semestre}</h3>
         <ul>
+          {/* Lista de asignaturas del semestre; la clase CSS depende del área (color). */}
           {lista.map((a) => (
             <li class={a.data.area}>
               <span>
                 {a.data.asignatura}
+                {/* Texto solo para lectores de pantalla: dice el área, para no depender del color. */}
                 <span class="sr-only"> ({areas[a.data.area]})</span>
               </span>
+              {/* Muestra los créditos solo si la asignatura los tiene. */}
               {a.data.creditos !== undefined && <small>{a.data.creditos}</small>}
             </li>
           ))}
@@ -61,6 +80,7 @@ const areas = {
       </article>
     ))}
   </div>
+  {/* Nota que avisa que la página oficial muestra una malla distinta a la de la resolución. */}
   <div class="curriculum-note">
     <span class="tag">Nota importante</span>
     <p>

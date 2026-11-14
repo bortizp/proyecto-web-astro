@@ -1,8 +1,13 @@
 ---
 // Cita [Fxx]: enlace numerado hacia la lista de Referencias (ancla #fxx).
+
+// Datos que recibe el componente: el código de la fuente, por ejemplo "F01".
 interface Props {
   id: string;
 }
+
+// Toma el código desde las propiedades que entrega quien usa el componente.
 const { id } = Astro.props;
 ---
+{/* El enlace apunta a la referencia con el mismo código (en minúsculas) y avisa a lectores de pantalla que es una fuente. */}
 <a class="citation" href={`#${id.toLowerCase()}`} aria-label={`Fuente ${id}`}>[{id}]</a>

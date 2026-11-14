@@ -1,36 +1,46 @@
 ---
 // Referencias: lista ordenada de la colección `referencias`; cuenta fuentes primarias y
 // muestra fecha del dato y fecha de consulta. Cada <li> tiene id para que [Fxx] enlace aquí.
+
 import { getCollection } from "astro:content";
 import Eyebrow from "./Eyebrow.astro";
 
+// Carga las fuentes y las ordena por código (F01, F02, ...).
 const referencias = (await getCollection("referencias")).sort((a, b) =>
   a.id.localeCompare(b.id),
 );
+// Cuenta cuántas son primarias (las que emite quien produce el dato).
 const primarias = referencias.filter((r) => r.data.tipo === "primaria").length;
 ---
+{/* Sección final: de aquí sale cada dato del sitio. */}
 <section id="referencias" class="section references">
   <div class="section-heading split-heading">
     <div>
       <Eyebrow>Referencias</Eyebrow>
       <h2>Todo dato se puede abrir, leer y discutir.</h2>
     </div>
+    {/* Los números se calculan, así que no hay que actualizarlos a mano. */}
     <p>
       Cada cifra del sitio lleva un código [F01] a [F{referencias.length}] que
       apunta a esta lista. Son {referencias.length} fuentes y {primarias} de
       ellas son primarias, es decir, vienen de quien produce el dato.
     </p>
   </div>
+  {/* Lista numerada; cada elemento es una fuente. */}
   <ol class="reference-list">
+    {/* El id en minúsculas de cada <li> es el destino de los enlaces [Fxx] del sitio. */}
     {referencias.map(({ id, data }) => (
       <li id={id.toLowerCase()}>
         <b>[{id}]</b>
         <span>
+          {/* Referencia en formato APA 7. */}
           {data.referencia}
+          {/* Tipo de fuente, fecha del dato y fecha en que se consultó. */}
           <span class="meta">
             Fuente {data.tipo} · fecha del dato: {data.fechaDato} · consultada el {data.fechaConsulta}
           </span>
         </span>
+        {/* Enlace a la fuente original; abre sin dar acceso a esta página (noopener). */}
         <a href={data.url} rel="noopener noreferrer" aria-label={`Abrir fuente ${id}`}>Abrir ↗</a>
       </li>
     ))}

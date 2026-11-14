@@ -1,23 +1,34 @@
 ---
 // Campo laboral: lee la colección `campoLaboral` (cifras con año y fuente) y las muestra
 // en tarjetas. Si falta un dato obligatorio, el sitio no se construye.
+// Carga las colecciones de contenido; el build falla si un dato no cumple su esquema.
 import { getCollection } from "astro:content";
 import Cita from "./Cita.astro";
 import Etiqueta from "./Etiqueta.astro";
 import Eyebrow from "./Eyebrow.astro";
 
+// Lee todas las cifras de campo laboral desde src/content/campo-laboral.json.
 const datos = await getCollection("campoLaboral");
+// Las deja indexadas por su id para pedirlas por nombre.
 const porId = Object.fromEntries(datos.map((d) => [d.id, d.data]));
+// Empleabilidad al primer año de titulación.
 const e1 = porId["empleabilidad-1er-anio"];
+// Empleabilidad al segundo año de titulación.
 const e2 = porId["empleabilidad-2do-anio"];
+// Ingreso promedio al cuarto año (texto con el rango, por ejemplo "$2.200.000 a $2.300.000").
 const ingreso = porId["ingreso-4to-anio"];
+// Matrículas de pregrado del área Tecnología (SIES).
 const matricula = porId["matricula-tecnologia-pregrado"];
+// Porcentaje de esa matrícula sobre el total.
 const porcentaje = porId["matricula-tecnologia-porcentaje"];
+// Separa el rango del ingreso en dos valores: mínimo y máximo.
 const rango = ingreso.valor.split(" a ");
+// Quita el símbolo % del final para poder mostrarlo con otro tamaño de letra.
 const sinPorcentaje = (v: string) => v.replace(/\s*%$/, "");
 
 // Áreas que nombra la UTEM como campo de desarrollo profesional (F01)
 // y ramos de la malla (F02).
+// Áreas de desempeño: cada una con la fuente que la respalda.
 const areas = [
   ["Desarrollo de software", "F01"],
   ["Dirección de proyectos informáticos", "F01"],
@@ -27,7 +38,9 @@ const areas = [
   ["Datos, ciberseguridad y nube", "F02"],
 ];
 ---
+{/* Sección con ancla "campo-laboral", a la que apunta el menú superior. */}
 <section id="campo-laboral" class="section outcomes">
+  {/* Encabezado dividido: título a la izquierda y explicación a la derecha. */}
   <div class="section-heading split-heading">
     <div>
       <Eyebrow>Campo laboral</Eyebrow>
@@ -39,6 +52,7 @@ const areas = [
       cada persona <Cita id="F13" />.
     </p>
   </div>
+  {/* Tres tarjetas con las cifras principales; cada una lleva su etiqueta "Dato" y su cita. */}
   <div class="stat-grid">
     <article class="stat-card light">
       <Etiqueta tipo="dato" naranjo />
@@ -59,11 +73,13 @@ const areas = [
       <p>Rango de ingreso promedio informado en la edición 2025-2026 de Mi Futuro. No es un sueldo garantizado.</p> <Cita id={ingreso.fuenteId} />
     </article>
   </div>
+  {/* Franja de contexto: tamaño del área Tecnología en Chile, con año y fuente. */}
   <div class="context-strip">
     <p>
-      <strong>Contexto:</strong> en {matricula.anio}, el área Tecnología sumó {matricula.valor} matrículas de pregrado en Chile, según el Servicio de Información de Educación Superior (SIES), el {porcentaje.valor} del total <Cita id={matricula.fuenteId} />.
+      <strong>Contexto:</strong> en {matricula.anio}, el área Tecnología sumó {matricula.valor} matrículas de pregrado en Chile, el {porcentaje.valor} del total. Lo informa el Servicio de Información de Educación Superior (SIES) <Cita id={matricula.fuenteId} />.
     </p>
   </div>
+  {/* Lista de áreas en que se puede trabajar. */}
   <div class="jobs">
     <div>
       <h3>¿En qué se traduce?</h3>
@@ -73,9 +89,11 @@ const areas = [
       </p>
     </div>
     <ul class="job-list">
+      {/* Una fila por área, numerada con dos dígitos (01, 02, ...). */}
       {areas.map(([area, fuente], i) => (
         <li><b>{String(i + 1).padStart(2, "0")}</b>{area} <Cita id={fuente} /></li>
       ))}
+      {/* Última fila: lo que la lista no alcanza a cubrir, marcado como interpretación. */}
       <li class="more">
         <b>07</b><strong>Y mucho más.</strong> Con electivos, práctica y proyectos
         propios aparecen especializaciones que esta lista no alcanza a cubrir. <Etiqueta tipo="interpretacion" enLinea naranjo />

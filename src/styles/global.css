@@ -1477,3 +1477,11 @@ details[open] summary i::after {
   font: 500 12px/1.5 var(--mono);
   color: var(--muted);
 }
+.lab-note {
+  margin: 28px 0 0;
+  max-width: 760px;
+}
+/* Las fechas son largas: pueden pasar a otra línea en pantallas angostas. */
+.admission-layout > div {
+  min-width: 0;
+}

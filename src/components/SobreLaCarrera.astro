@@ -1,23 +1,29 @@
 ---
 // Sobre la carrera: datos generales (F01, F02), respuesta a "¿tengo que saber programar?"
 // y testimonio. El arreglo `testimonios` solo admite opiniones reales con autorización.
+// Cita [Fxx], etiqueta y título de sección reutilizables.
 import Cita from "./Cita.astro";
 import Etiqueta from "./Etiqueta.astro";
 import Eyebrow from "./Eyebrow.astro";
 
 // Solo testimonios reales, con autorización de quien los dice.
 // Para sumar uno, agrega un objeto con el texto y quién lo dijo.
+// Lista de testimonios. Solo se aceptan opiniones reales y con autorización de quien las dice.
 const testimonios = [
   {
+    // Cada testimonio tiene sus frases (texto) y quién las dijo (autor).
     texto: [
       "En la carrera de ingeniería informática me ha ayudado a hacer amigos.",
       "He tenido una grata experiencia con los profesores y profesoras.",
     ],
+    // Se identifica como opinión personal, tal como exige el encargo.
     autor: "Opinión personal de una integrante del equipo.",
   },
 ];
 ---
+{/* Sección con ancla "sobre-la-carrera", a la que apunta el menú superior. */}
 <section id="sobre-la-carrera" class="section about">
+  {/* Encabezado: título y descripción de la carrera (jornada, duración, título, grado y propósito). */}
   <div class="section-heading split-heading">
     <div>
       <Eyebrow>Sobre la carrera</Eyebrow>
@@ -27,26 +33,31 @@ const testimonios = [
       La UTEM imparte Ingeniería en Informática en jornada diurna, durante 8
       semestres (4 años) <Cita id="F01" />. Al terminar obtienes el título de
       Ingeniera o Ingeniero en Informática y el grado de Licenciada o Licenciado
-      en Informática <Cita id="F01" />.
+      en Informática <Cita id="F01" />. Según la UTEM, la carrera forma para
+      desarrollar software y soluciones tecnológicas <Cita id="F01" />.
     </p>
   </div>
+  {/* Cuadrícula con datos, la duda más frecuente y el testimonio. */}
   <div class="about-grid">
     <div class="big-copy">
+      {/* Lista de datos clave (código DEMRE, duración, créditos y vacantes), cada uno con su cita. */}
       <dl class="fact-row">
         <div><dt>Código DEMRE</dt><dd>21030 <Cita id="F01" /></dd></div>
         <div><dt>Duración</dt><dd>8 semestres <Cita id="F01" /></dd></div>
         <div><dt>Créditos transferibles (SCT)</dt><dd>240 <Cita id="F02" /></dd></div>
         <div><dt>Vacantes (consulta nov. 2026)</dt><dd>150 <Cita id="F01" /></dd></div>
       </dl>
+      {/* Explicación de la sigla DEMRE la primera vez que aparece. */}
       <p class="glossary">
         DEMRE: Departamento de Evaluación, Medición y Registro Educacional.
       </p>
       <p>
         La malla combina tres tipos de ramos: base matemática y científica,
-        informática, y proyecto o profesión, que termina con el trabajo de título
-        y la práctica profesional <Cita id="F02" />.
+        informática, y proyecto o profesión. Termina con el trabajo de título y
+        la práctica profesional <Cita id="F02" />.
       </p>
     </div>
+    {/* Tarjeta con la duda frecuente "¿tengo que saber programar?" y su respuesta con fuente. */}
     <aside class="note-card" aria-labelledby="pregunta-programar">
       <Etiqueta tipo="dato" naranjo />
       <h3 id="pregunta-programar">Una duda frecuente</h3>
@@ -58,6 +69,7 @@ const testimonios = [
       </p>
     </aside>
     <div>
+      {/* Muestra cada testimonio con su etiqueta "Testimonio". */}
       {testimonios.map((t) => (
         <blockquote class="quote-card">
           <Etiqueta tipo="testimonio" />
@@ -67,6 +79,7 @@ const testimonios = [
       ))}
     </div>
   </div>
+  {/* Carreras afines, con su fuente, marcadas como interpretación del equipo. */}
   <div class="interpretation related">
     <Etiqueta tipo="interpretacion" naranjo />
     <div>

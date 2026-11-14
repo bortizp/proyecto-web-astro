@@ -86,6 +86,7 @@ Se evaluaron 19 fuentes (17 primarias y 2 secundarias) con cinco criterios: auto
 - Se aplicó un cuestionario breve en Google Forms, de 7 preguntas, que toma unos 3 minutos (Anexo B1).
 - El formulario informaba que la participación era voluntaria y anónima, que no se pedía nombre, RUT ni correo, que las respuestas se usarían solo en el proyecto y se presentarían agrupadas, y que la persona podía dejar de responder cuando quisiera.
 - Se recibieron 6 respuestas el 7 de noviembre de 2026. En este informe se identifican con los códigos E1 a E6.
+- El consentimiento informado se dio por escrito al inicio del formulario (texto en el Anexo B1): la participación es voluntaria y anónima, y las respuestas se usan solo en el proyecto. Las respuestas originales quedan en el formulario del equipo, disponibles para que el docente las verifique.
 - Perfiles: 2 estudian 4.° medio, 1 es egresado/a de media y 3 marcaron "Otro". Nadie marcó "Soy familiar de un/a estudiante de media" ni "Quiero cambiarme de carrera o estudiar algo nuevo". El formulario no incluía la opción de 3.° medio.
 
 ### 4.2 Perfil de usuario (persona tipo)
@@ -131,20 +132,26 @@ Con 6 respuestas, los resultados son tendencias y no porcentajes de la població
 
 ## 5. Fase C – Arquitectura de información (Producto C)
 
+Este es el orden de secciones de la página publicada. Sigue la secuencia de preguntas del encargo: qué es la carrera, qué se aprende, qué se puede hacer al egresar, qué respaldo tiene y cómo se postula. Las cifras de "personas" salen de la encuesta de la Fase B (6 respuestas).
+
 | Orden | Sección | Por qué va en este lugar | Fuentes (IDs) |
 | ----- | ------- | ------------------------ | ------------- |
-| 1 | Portada | Las personas conocen la carrera "a medias" (3,0 de 5 en promedio). La portada la presenta en pocas líneas y lleva a lo más buscado. | F01 |
-| 2 | Campo laboral | 4 de 6 personas preguntaron si hay trabajo al titularse y 3 de 6, cuánto se gana. | F12, F13, F15 |
-| 3 | Plan de estudios | 4 de 6 preguntaron cuánta matemática hay y 2 de 6, qué se estudia. | F02, F03 |
-| 4 | Sobre la carrera | 3 de 6 preguntaron cuántos años dura y 2 de 6, cómo es la vida de estudiante. | F01, F09, F10, F11 |
-| 5 | Admisión | 3 de 6 preguntaron qué puntajes y requisitos piden. Empata con Sobre la carrera, que va antes porque suma otra duda. | F01, F06, F07 |
-| 6 | Perfil de egreso | 2 de 6 preguntaron qué se hace en el día a día. También responde a "solo se programa", con la que solo 1 de 6 estuvo de acuerdo. | F01, F03 |
-| 7 | Preguntas frecuentes | Reúne dudas y creencias: la IA (2 de 6 de acuerdo), "más para hombres" (2 de 6) y la matemática (acuerdo promedio de 3,0 de 5). | F06, F07, F08, F19 |
-| 8 | Respaldo institucional | Nadie preguntó por acreditación (0 de 6), por eso va casi al final. Es obligatoria y 2 de 6 desconfían de frases sin respaldo. | F04, F05, F14, F17, F18 |
-| 9 | Referencias | 3 de 6 desconfían de información desactualizada y 2 de 6 de cifras sin fuente. Cada cifra enlaza aquí. | F01 a F19 |.
+| 1 | Portada | Las personas conocen la carrera "a medias" (3,0 de 5 en promedio). La portada la presenta en pocas líneas y lleva a lo más buscado. | F01, F02 |
+| 2 | Sobre la carrera | Responde la primera pregunta del encargo: qué es y en qué se diferencia de carreras afines. 3 de 6 personas preguntaron cuántos años dura y 2 de 6, cómo es la vida de estudiante. | F01, F02, F10, F11 |
+| 3 | Perfil de egreso | Explica qué se podrá hacer antes de mostrar los ramos. 2 de 6 preguntaron qué se hace en el día a día. También responde a "solo se programa", con la que solo 1 de 6 estuvo de acuerdo. | F01, F02 |
+| 4 | Plan de estudios | 4 de 6 preguntaron cuánta matemática hay y 2 de 6, qué se estudia. Va después del perfil, para que los ramos se lean como una forma de llegar a esas capacidades. | F01, F02 |
+| 5 | Campo laboral | 4 de 6 preguntaron si hay trabajo al titularse y 3 de 6, cuánto se gana. Cierra la secuencia "qué aprendo, qué podré hacer". | F01, F02, F12, F13 |
+| 6 | Respaldo institucional | Nadie preguntó por acreditación (0 de 6), pero es una sección obligatoria y 2 de 6 desconfían de frases sin respaldo. Va después de lo que la persona quiere saber. | F14, F17, F18 |
+| 7 | Admisión | 3 de 6 preguntaron qué puntajes y requisitos piden. Va después de las secciones que ayudan a decidir si postular. | F01, F06, F07, F08 |
+| 8 | Preguntas frecuentes | Reúne dudas y creencias: la IA (2 de 6 de acuerdo), "más para hombres" (2 de 6) y la matemática (acuerdo promedio de 3,0 de 5). | F01, F02, F08, F13, F19 |
+| 9 | Referencias | 3 de 6 desconfían de información desactualizada y 2 de 6 de cifras sin fuente. Cada cifra enlaza aquí. | F01 a F19 |
 
-   ![Wireframe móvil](docs/wireframe_movil.jpg)
-   ![Wireframe escritorio](docs/wireframe_escritorio.jpg)
+**Cómo se atendieron las dudas más frecuentes.** Las dos preguntas con más menciones (empleo y matemática, 4 de 6 cada una) corresponden a Campo laboral y Plan de estudios, que quedan en la mitad de la página. Por eso ambas tienen un enlace directo en el menú superior, que acompaña al visitante mientras baja, y sus cifras principales aparecen en tarjetas destacadas.
+
+**Diferencia con los wireframes.** Los wireframes de baja fidelidad, hechos antes de implementar, ponían Campo laboral y Plan de estudios justo después de la portada. Al implementar, la página siguió la secuencia de preguntas del encargo. El costo de esta decisión es que dos de las dudas más frecuentes quedan más abajo, y se compensa con el acceso directo del menú.
+
+![Wireframe móvil](docs/wireframe_movil.jpg)
+![Wireframe escritorio](docs/wireframe_escritorio.jpg)
 
 Secciones obligatorias del sitio: Portada, Sobre la carrera, Perfil de egreso, Plan de estudios, Campo laboral, Respaldo institucional, Admisión, Preguntas frecuentes y Referencias.
 
@@ -242,8 +249,10 @@ Se usó Claude (Anthropic) como apoyo. Ningún dato se tomó de la IA sin verifi
 | Claude | Buscar y evaluar fuentes y armar la matriz (Producto A) | Completar la matriz según lo que pide el profe y verificar los datos en la CNA, Mi Futuro y el SIES | La lista de fuentes inicial se corrigió (enlaces genéricos reemplazados por páginas específicas y una noticia reemplazada por el informe SIES). Cada dato se verificó abriendo la fuente. Una cifra de prensa que no estaba en el informe del SIES se descartó, y el "4 años" de acreditación de Mi Futuro se reemplazó por el dato vigente de la CNA. |
 | Claude | Pasar el diseño de Figma Make a código Astro y revisar calidad | Implementar el diseño elegido con los datos reales del sitio; revisar accesibilidad, desbordes y requisitos del profe | El equipo eligió el diseño en Figma Make. Se corrigieron contrastes, nombres accesibles y el solape del dibujo en 768 px. Los datos no vinieron de la IA: salen de `src/content/` y de las fuentes verificadas. |
 | Claude | Atajos técnicos: etiquetas Open Graph, favicon, imagen para redes y README | Completar los requisitos de SEO y documentación | La imagen para redes y el favicon se hicieron con texto propio del sitio, sin imágenes de terceros. |
+| Claude | Completar contenido faltante y ordenar la página | Agregar propósito formativo y nota de laboratorios; acortar oraciones; alinear el orden de la Fase C | Cada dato se verificó en su fuente (página de la carrera, F01) antes de incluirse. Lo que no aparece en la fuente se declara como "no tenemos un dato verificado". |
+| Claude | Comentarios del código | Documentar línea a línea los componentes, el layout y el esquema de las colecciones | El equipo revisó que cada comentario describa lo que hace el código. |
 
-Los comentarios del código explican qué hace cada componente y de dónde vienen sus datos.
+El código generado con ayuda de IA está comentado línea a línea en los propios archivos (componentes, layout y esquema de las colecciones).
 
 ---
 
