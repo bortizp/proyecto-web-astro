@@ -1,10 +1,12 @@
 ---
 // Respaldo institucional: certificación de la carrera (F14), acreditación de la UTEM (F17)
 // y planta académica (F18), cada una con su período de vigencia.
+// Cita [Fxx], etiqueta y título de sección reutilizables.
 import Cita from "./Cita.astro";
 import Etiqueta from "./Etiqueta.astro";
 import Eyebrow from "./Eyebrow.astro";
 ---
+{/* Sección con ancla "respaldo-institucional", a la que apunta el menú superior. */}
 <section id="respaldo-institucional" class="section backing">
   <div class="section-heading split-heading">
     <div>
@@ -16,22 +18,27 @@ import Eyebrow from "./Eyebrow.astro";
       universidad. Cada uno tiene su propio período de vigencia.
     </p>
   </div>
+  {/* Tres tarjetas: certificación de la carrera, acreditación de la universidad y académicos. */}
   <div class="backing-grid">
     <article>
       <header>
         <span class="outline-icon" aria-hidden="true">✓</span>
+        {/* Cifra destacada: años de la certificación de la carrera (F14). */}
         <span class="big">5 años</span>
       </header>
       <h3>Carrera certificada</h3>
       <p>
-        Certificación de calidad nacional e internacional, otorgada por la
-        Agencia Acreditadora de Chile y el Consejo Nacional de Acreditación en Informática y Computación (CONAIC), con sede en México <Cita id="F14" />.
+        Certificación de calidad nacional e internacional. La otorgan la Agencia
+        Acreditadora de Chile y el Consejo Nacional de Acreditación en
+        Informática y Computación (CONAIC), con sede en México <Cita id="F14" />.
       </p>
+      {/* Período de vigencia de la certificación, con su fuente. */}
       <p class="period">16 jun 2025 → 16 jun 2030 <Cita id="F14" /></p>
     </article>
     <article>
       <header>
         <span class="outline-icon" aria-hidden="true">U</span>
+        {/* Nivel de acreditación institucional que informa la CNA (F17). */}
         <span class="big">Avanzada</span>
       </header>
       <h3>Universidad acreditada</h3>
@@ -39,11 +46,13 @@ import Eyebrow from "./Eyebrow.astro";
         La Comisión Nacional de Acreditación (CNA) acredita a la UTEM como
         institución en nivel avanzado, por cinco años <Cita id="F17" />.
       </p>
+      {/* Período de vigencia de la acreditación institucional. */}
       <p class="period">26 mar 2026 → 26 mar 2031 <Cita id="F17" /></p>
     </article>
     <article>
       <header>
         <span class="outline-icon" aria-hidden="true">+</span>
+        {/* Cantidad de académicos de jornada completa según la lista del departamento (F18). */}
         <span class="big">10</span>
       </header>
       <h3>Académicos de jornada completa</h3>
@@ -51,9 +60,17 @@ import Eyebrow from "./Eyebrow.astro";
         La lista del Departamento de Informática y Computación incluye 10
         académicas y académicos de jornada completa <Cita id="F18" />.
       </p>
+      {/* Fecha en que se consultó la lista. */}
       <p class="period">Lista consultada el 8 nov 2026 <Cita id="F18" /></p>
     </article>
   </div>
+  {/* Laboratorios: la página de la carrera no los describe, y el sitio lo declara en vez de inventar. */}
+  <p class="lab-note">
+    <Etiqueta tipo="dato" enLinea />
+    Laboratorios: la página de la carrera no los describe. No tenemos un dato
+    verificado sobre esto <Cita id="F01" />.
+  </p>
+  {/* Aclara la diferencia entre acreditación de la universidad y certificación de la carrera. */}
   <div class="interpretation">
     <Etiqueta tipo="interpretacion" naranjo />
     <p>

@@ -1,17 +1,23 @@
 ---
 // Perfil de egreso: capacidades con su mapeo a ramos de la malla. Texto fijo; las fuentes
 // se citan con <Cita> y lo que concluye el equipo se marca como interpretación.
+// Componentes reutilizables: la cita [Fxx], la etiqueta (dato/interpretación) y el título de sección.
 import Cita from "./Cita.astro";
 import Etiqueta from "./Etiqueta.astro";
 import Eyebrow from "./Eyebrow.astro";
 
 // Cada capacidad resume un punto del perfil publicado por la UTEM (F01).
 // "En la malla" es nuestra relación con ramos de la resolución (F02): interpretación.
+// Lista de las cinco capacidades del perfil. Cada una tiene número, título, texto y los ramos de la malla que se le relacionan.
 const capacidades = [
   {
+    // Número que se muestra en la tarjeta.
     n: "01",
+    // Título corto de la capacidad.
     titulo: "Diseñar y desarrollar",
+    // Texto resumido del perfil de egreso oficial (F01).
     texto: "Soluciones de software y sistemas de información, e integrarlas.",
+    // Ramos relacionados: lectura del equipo sobre la resolución (F02).
     malla: "Algoritmos y Programación, Ingeniería de Software, Computación Móvil y Web",
   },
   {
@@ -40,7 +46,9 @@ const capacidades = [
   },
 ];
 ---
+{/* Sección con ancla "perfil-de-egreso", a la que apunta el menú superior. */}
 <section id="perfil-de-egreso" class="section profile">
+  {/* Encabezado de la sección: título y explicación breve. */}
   <div class="section-heading compact">
     <Eyebrow>Perfil de egreso</Eyebrow>
     <h2>¿Qué deberías poder hacer al salir?</h2>
@@ -49,7 +57,9 @@ const capacidades = [
       perfil de egreso que publica la universidad <Cita id="F01" />.
     </p>
   </div>
+  {/* Cuadrícula de tarjetas, una por capacidad. */}
   <div class="capability-grid">
+    {/* Recorre la lista `capacidades` y crea una tarjeta por cada una. */}
     {capacidades.map((c) => (
       <article class="capability">
         <span>{c.n}</span>
@@ -59,6 +69,7 @@ const capacidades = [
       </article>
     ))}
   </div>
+  {/* Aviso que separa lo oficial de lo que interpreta el equipo (etiqueta "Interpretación"). */}
   <div class="interpretation">
     <Etiqueta tipo="interpretacion" naranjo />
     <p>

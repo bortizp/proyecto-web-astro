@@ -187,14 +187,14 @@
     "pregunta": "¿La inteligencia artificial deja sin trabajo a los informáticos?",
     "respuesta": [
       {
-        "texto": "El Foro Económico Mundial proyecta a 2030 que los desarrolladores de software y aplicaciones estarán entre los empleos de mayor crecimiento (cuarto lugar de su ranking).",
+        "texto": "El Foro Económico Mundial proyecta a 2030 que los desarrolladores de software y aplicaciones estarán entre los empleos de mayor crecimiento. Ocupan el cuarto lugar de su ranking.",
         "tipo": "dato",
         "fuentes": [
           "F19"
         ]
       },
       {
-        "texto": "El mismo informe estima que la IA y el procesamiento de información crearán 11 millones de empleos y reemplazarán 9 millones en el mundo.",
+        "texto": "El mismo informe estima que la IA y el procesamiento de información crearán 11 millones de empleos. También reemplazarán 9 millones en el mundo.",
         "tipo": "dato",
         "fuentes": [
           "F19"

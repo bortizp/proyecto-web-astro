@@ -1,16 +1,22 @@
 ---
 // Preguntas frecuentes: lee la colección `faq` (src/content/faq.json), las ordena por `orden`
 // y muestra la etiqueta (dato, interpretación o testimonio) y las fuentes de cada párrafo.
+
+// Función de Astro que carga una colección de contenido ya validada por su esquema.
 import { getCollection } from "astro:content";
+// Componentes que se reutilizan en esta sección.
 import Cita from "./Cita.astro";
 import Etiqueta from "./Etiqueta.astro";
 import Eyebrow from "./Eyebrow.astro";
 
+// Carga todas las preguntas y las ordena de menor a mayor según el campo `orden`.
 const preguntas = (await getCollection("faq")).sort(
   (a, b) => a.data.orden - b.data.orden,
 );
 ---
+{/* Sección con ancla "preguntas-frecuentes", a la que apunta el menú superior. */}
 <section id="preguntas-frecuentes" class="section faq">
+  {/* Encabezado: título y explicación de cómo leer las respuestas. */}
   <div class="section-heading compact">
     <Eyebrow>Preguntas frecuentes</Eyebrow>
     <h2>Lo que queríamos saber antes de entrar.</h2>
@@ -19,18 +25,27 @@ const preguntas = (await getCollection("faq")).sort(
       nuestra. Si no tenemos un dato verificado, lo decimos.
     </p>
   </div>
+  {/* Acordeón: cada pregunta es un <details>, que se abre y cierra sin JavaScript. */}
   <div class="accordion">
+    {/* Recorre las preguntas; `i` es la posición (0 es la primera). */}
+    {/* Solo la primera pregunta aparece abierta al cargar (open={i === 0}). */}
     {preguntas.map(({ data }, i) => (
       <details open={i === 0}>
+        {/* summary es la línea visible que se presiona para abrir o cerrar. */}
         <summary>
+          {/* Número de la pregunta con dos dígitos (01, 02, ...); es decorativo para lectores de pantalla. */}
           <span aria-hidden="true">{String(data.orden).padStart(2, "0")}</span>
           {data.pregunta}
+          {/* Ícono de abrir/cerrar, dibujado con CSS. */}
           <i aria-hidden="true"></i>
         </summary>
+        {/* Cuerpo de la respuesta: puede tener varios párrafos. */}
         <div class="answer">
           {data.respuesta.map((p) => (
             <p>
+              {/* Si el párrafo tiene tipo, muestra su etiqueta (dato, interpretación o testimonio). */}
               {p.tipo && <Etiqueta tipo={p.tipo} enLinea naranjo />}
+              {/* Texto del párrafo seguido de un enlace [Fxx] por cada fuente. */}
               {p.texto} {p.fuentes.map((f) => <Cita id={f} />)}
             </p>
           ))}

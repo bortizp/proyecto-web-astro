@@ -5,17 +5,28 @@ import Cita from "./Cita.astro";
 import Etiqueta from "./Etiqueta.astro";
 import Eyebrow from "./Eyebrow.astro";
 
+// Ponderaciones tal como las publica la UTEM en la página de la carrera (F01): [factor, detalle, porcentaje].
 // Nombres tal como los publica la UTEM en la página de la carrera (F01).
+// Lista de factores de selección.
 const ponderaciones = [
+  // Notas de Enseñanza Media (NEM).
   ["NEM", "Notas de Enseñanza Media (NEM)", "10 %"],
+  // Ranking de notas.
   ["Ranking", "Ranking de notas", "25 %"],
+  // Prueba de Competencia Lectora (CL).
   ["Competencia Lectora (CL)", "PAES", "20 %"],
+  // Prueba de Competencia Matemática 1 (M1).
   ["Competencia Matemática 1 (M1)", "PAES", "30 %"],
+  // Prueba de Competencia Matemática 2 (M2).
   ["Competencia Matemática 2 (M2)", "PAES", "5 %"],
+  // Prueba electiva de Ciencias.
   ["Electiva de Ciencias", "PAES", "10 %"],
+  // Prueba electiva de Historia y Ciencias Sociales.
   ["Electiva de Historia y Ciencias Sociales", "PAES", "10 %"],
 ];
+
 ---
+{/* Sección con ancla "admision", a la que apunta el menú superior. */}
 <section id="admision" class="section admissions">
   <div class="section-heading split-heading">
     <div>
@@ -30,21 +41,25 @@ const ponderaciones = [
       2026, así que confírmalas antes de postular.
     </p>
   </div>
+  {/* Cuatro cifras clave: vacantes, puntaje mínimo, matrícula y arancel, cada una con su cita. */}
   <dl class="key-figures">
     <div><dt>Vacantes</dt><dd>150 <Cita id="F01" /></dd></div>
     <div><dt>Promedio mínimo entre Competencia Lectora (CL) y Matemática 1 (M1)</dt><dd>458 pts. <Cita id="F01" /></dd></div>
     <div><dt>Matrícula</dt><dd>$90.000 <Cita id="F01" /></dd></div>
     <div><dt>Arancel anual</dt><dd>$4.763.300 <Cita id="F01" /></dd></div>
   </dl>
+  {/* Dos columnas: tablas a la izquierda y checklist a la derecha. */}
   <div class="admission-layout">
     <div>
       <div class="table-wrap">
         <table>
+          {/* La tabla de ponderaciones lleva título (caption) para lectores de pantalla. */}
           <caption>Ponderaciones según la UTEM <Cita id="F01" /></caption>
           <thead>
             <tr><th scope="col">Factor de selección</th><th scope="col">Ponderación</th></tr>
           </thead>
           <tbody>
+            {/* Una fila por factor de selección. */}
             {ponderaciones.map(([nombre, detalle, valor]) => (
               <tr>
                 <th scope="row">{nombre}<small>{detalle}</small></th>
@@ -54,6 +69,7 @@ const ponderaciones = [
           </tbody>
         </table>
       </div>
+      {/* Nota que explica por qué la suma da 110 %; es interpretación del equipo. */}
       <p class="table-note">
         <Etiqueta tipo="interpretacion" enLinea naranjo />
         Si sumas todas las filas da 110 %. Las dos últimas son pruebas
@@ -62,6 +78,7 @@ const ponderaciones = [
         universidad.
       </p>
     </div>
+    {/* Lista de verificación antes de postular, con enlaces a las fuentes. */}
     <aside class="checklist" aria-labelledby="checklist-titulo">
       <span class="tag tag-orange">Antes de enviar</span>
       <h3 id="checklist-titulo">Checklist honesto</h3>
@@ -72,6 +89,7 @@ const ponderaciones = [
         <li>Revisé las fechas del proceso en el Departamento de Evaluación, Medición y Registro Educacional (DEMRE) <Cita id="F07" />.</li>
         <li>Leí las instrucciones de postulación <Cita id="F08" />.</li>
       </ul>
+      {/* Enlace a la página oficial de admisión de la UTEM; abre sin dar acceso a esta página (noopener). */}
       <a class="button dark" href="https://www.utem.cl/admision/admision-acceso-via-paes/" rel="noopener noreferrer">
         Ir a Admisión UTEM <span aria-hidden="true">↗</span>
       </a>

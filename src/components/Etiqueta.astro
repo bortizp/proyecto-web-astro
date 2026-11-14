@@ -1,15 +1,25 @@
 ---
 // Etiqueta visible: distingue dato, interpretación y testimonio (con texto, no solo color).
+
+// Propiedades del componente:
+//   tipo: qué clase de afirmación acompaña (solo se aceptan estos tres valores).
+//   enLinea: si es true, la etiqueta se muestra pequeña dentro de un párrafo.
+//   naranjo: si es true, usa el color naranjo en vez del azul.
 interface Props {
   tipo: "dato" | "interpretacion" | "testimonio";
   enLinea?: boolean;
   naranjo?: boolean;
 }
+
+// Lee las propiedades y define los valores por defecto (false) cuando no se indican.
 const { tipo, enLinea = false, naranjo = false } = Astro.props;
+
+// Texto que ve la persona para cada tipo (con tilde y mayúscula inicial).
 const nombres = {
   dato: "Dato",
   interpretacion: "Interpretación",
   testimonio: "Testimonio",
 };
 ---
+{/* class:list arma las clases CSS según las propiedades: siempre "tag", la del tipo, y las opcionales. */}
 <span class:list={["tag", `tag-${tipo}`, { "tag-inline": enLinea, "tag-orange": naranjo }]}>{nombres[tipo]}</span>
